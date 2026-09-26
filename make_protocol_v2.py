@@ -4,12 +4,19 @@
 做法：逐条定位原文片段并整段替换，未列入替换表的文字一律保持原样。
 这样清稿版与《方案修正案_修订对照表》严格一一对应，伦理委员会可逐条核对。
 每条替换都断言命中次数，任何一条没匹配上就直接报错，不静默跳过。
+
+2026-09-26 补：清稿版与对照表逐条核对时发现三处遗漏，已补入 REPL_0926 与 REFS：
+  · 参考文献仍是 V1.1 的 5 篇成人溃疡文献，与对照表第 11 条“已替换”不符；
+  · “八、数据存储”仍写数据来源含“随访记录”，“十一、研究进度”仍写“随访资料的统计分析”，
+    与删除随访终点（对照表第 3、4 条）矛盾，对应对照表新增的第 12 条。
 """
 import os
 import shutil
+from copy import deepcopy
 from docx import Document
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
+from docx.text.paragraph import Paragraph
 
 SRC = r'D:\胃十二指肠穿孔\观察性研究初始审查（儿童胃十二指肠穿孔）\2-研究方案（供观察性研究参考）-已修订.docx'
 DST = r'D:\胃十二指肠穿孔\①儿童胃十二指肠穿孔病因谱十年变迁\2-研究方案_V2.0_病因谱十年变迁.docx'
@@ -125,6 +132,44 @@ REPL = [
   'Cohen κ评价一致性；必要时根据病因类别、穿孔部位或并发症情况进行探索性比较。', 1),
 ]
 
+# 2026-09-26 补（对照表第 12 条）：数据来源与研究进度中残留的“随访”表述
+REPL_0926 = [
+ ('本研究的临床数据均来源于本单位病案系统、手术麻醉系统及随访记录',
+  '本研究的临床数据均来源于本单位病案系统及手术麻醉系统的住院期间记录，不含门诊随访资料。'
+  '研究数据经去标识化后由胃肠外科研究团队专人管理，临床数据的准确性、规范性、系统性和安全性由本单位相关科室'
+  '协同管理、监督、审核和归档。', 1),
+
+ # 入组筛选须按修订后的纳排标准执行，只能在修正案获批之后，故移入第二阶段
+ ('2026年7月-2026年9月：完成病例检索、入组筛选',
+  '2026年7月-2026年9月：完成病例检索及住院期间临床资料的提取、归纳和整理；', 1),
+
+ ('2026年10月-2026年12月：完成所有病例围手术期资料',
+  '2026年10月-2026年12月：依据修订后的纳入排除标准完成入组筛选，完成病因的双人独立裁定与一致性评价，'
+  '并完成病因构成、时间趋势及住院期间临床资料的统计分析；', 1),
+]
+
+# 2026-09-26 补（对照表第 11 条）：参考文献替换为儿童相关文献。
+# 书目信息取自 文献检索_PubMed_20260925.json（第一作者、题名、刊名、年份、PMID 均原样照录）；
+# 该检索未导出卷期页码，故以 PMID 标识，投稿前用文献管理软件补全。
+REFS = [
+ '[1]. Yan X, et al. Gastroduodenal perforation in the pediatric population: a retrospective analysis of 20 cases. '
+ 'Pediatr Surg Int, 2019. PMID: 30448888.',
+ '[2]. Wang K, et al. Pediatric gastric perforation beyond neonatal period: 8-year experience with 20 patients. '
+ 'Pediatr Neonatol, 2019. PMID: 30992193.',
+ '[3]. Takamoto N, et al. Clinical course and management of pediatric gastroduodenal perforation beyond neonatal '
+ 'period. Pediatr Neonatol, 2025. PMID: 39709268.',
+ '[4]. Vidović S, et al. Perforated peptic ulcers in children: a systematic review. BMC Pediatr, 2025. PMID: 40335985.',
+ '[5]. Yang T, et al. Neonatal Gastric Perforation: Case Series and Literature Review. World J Surg, 2018. '
+ 'PMID: 29392435.',
+ '[6]. Fang Y, et al. Clinical characteristics and mortality prediction in neonatal gastric perforation: Insights '
+ 'from a regional multicenter retrospective cohort study. J Pediatr Surg, 2026. PMID: 41974396.',
+ '[7]. Wang K, et al. Multicenter investigation of pediatric gastrointestinal tract magnets ingestion in China. '
+ 'BMC Pediatr, 2020. PMID: 32111182.',
+ '[8]. Middelberg LK, et al. Magnet Injuries in Children: An Analysis of the National Poison Data System from 2008 '
+ 'to 2019. J Pediatr, 2021. PMID: 33516676.',
+]
+REFS_OLD = 5          # V1.1 的参考文献条数
+
 
 def iter_paras(doc):
     for p in doc.paragraphs:
@@ -157,12 +202,11 @@ def set_text(p, text):
         first._element.append(t)
 
 
-def main():
-    doc = Document(SRC)
+def apply_repl(doc, repl):
     # 不做「已处理」标记：每条替换都会让锚点文本本身消失，后续锚点不会再命中同一段。
     # （曾用 id(段落) 与 id(底层元素) 去重，但 lxml 代理对象是临时的、id 会被回收复用，
     #   导致同样的代码每次运行命中结果都不同，报错位置飘忽。）
-    for anchor, new_text, expect in REPL:
+    for anchor, new_text, expect in repl:
         hits = [q for q in iter_paras(doc) if anchor in q.text]
         msg = '锚点【%s】命中 %d 段，预期 %d 段' % (anchor[:28], len(hits), expect)
         assert len(hits) == expect, msg
@@ -170,6 +214,33 @@ def main():
             set_text(q, new_text)
         print('  OK %-34s -> %d 段' % (anchor[:34], len(hits)))
 
+
+def replace_refs(doc):
+    """「主要参考文献」之后的编号段落逐条改写；新文献多于旧条数时，复制末条段落格式续接。"""
+    paras = doc.paragraphs
+    head = [i for i, p in enumerate(paras) if p.text.strip() == '主要参考文献']
+    assert len(head) == 1, '「主要参考文献」标题命中 %d 段，预期 1 段' % len(head)
+    refs = [p for p in paras[head[0] + 1:] if p.text.strip().startswith('[')]
+    assert len(refs) == REFS_OLD, '原参考文献 %d 条，预期 %d 条' % (len(refs), REFS_OLD)
+    for p, text in zip(refs, REFS):
+        set_text(p, text)
+    last = refs[-1]
+    for text in REFS[len(refs):]:
+        el = deepcopy(last._element)
+        for bm in el.findall('.//' + qn('w:bookmarkStart')) + el.findall('.//' + qn('w:bookmarkEnd')):
+            bm.getparent().remove(bm)                 # 书签 id/名称不可重复
+        for att in (qn('w14:paraId'), qn('w14:textId')):
+            el.attrib.pop(att, None)                  # 段落 id 不可重复，交由 Word 重新分配
+        last._element.addnext(el)
+        last = Paragraph(el, last._parent)
+        set_text(last, text)
+    print('  OK 参考文献 %d 条 -> %d 条' % (len(refs), len(REFS)))
+
+
+def main():
+    doc = Document(SRC)
+    apply_repl(doc, REPL + REPL_0926)
+    replace_refs(doc)
     doc.save(DST)
     print('\n已写出 ->', DST)
 

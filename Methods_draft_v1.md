@@ -93,7 +93,7 @@ A statistical analysis plan was finalised before the adjudication results were u
 - Poisson regression of monthly case counts with the logarithm of monthly surgical admissions as an offset, replaced by negative binomial regression when the Pearson dispersion statistic exceeded 1.5, giving incidence rate ratios per year;
 - the same model applied to foreign-body–related and magnet-related perforations with foreign-body admissions as the offset, to assess whether any increase exceeded the change in foreign-body admissions.
 
-Clinical characteristics were compared across aetiologies with the Kruskal–Wallis test or Fisher's exact test. Treatment and in-hospital outcomes were summarised descriptively, without between-group inference, because few events were expected.
+Clinical characteristics were compared across aetiologies with the Kruskal–Wallis test or Fisher's exact test. Treatment and in-hospital outcomes were summarised descriptively, without between-group inference, because few events were expected. Whether time to feeding was compared across aetiologies, rather than only described, was decided after chart review was complete, based solely on the proportion of admissions with a documented value (a pre-specified threshold of 30% unknown, fixed before this proportion was known); the decision did not depend on the observed between-group difference [state which applied and the achieved completeness].
 
 **Sensitivity analyses.** The pre-specified sensitivity analyses were:
 - repeating the primary analysis after excluding neonates, who cannot have foreign-body perforation, so that changes in neonatal referrals cannot drive the proportion;

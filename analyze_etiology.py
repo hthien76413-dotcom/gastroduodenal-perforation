@@ -521,6 +521,40 @@ def table5(inc):
     return pd.DataFrame(rows, columns=['项目'] + [n for n, _ in groups])
 
 
+def feeding_decision(inc, threshold=0.30):
+    """SAP 3.6：进食时间是否转为组间比较，只依据 HIS 补查完成后的实际缺失（NR）比例判断，
+    不依据观察到的组间差异——判断在看到检验结果前就已锁定阈值，避免因结果改变分析方式。
+    未完成核对时判断状态为“待定”；判断结果与依据一并写出，供审阅追溯。"""
+    if '提取已核对' not in inc.columns:
+        return pd.DataFrame([['判断状态', '待定：次要终点提取表尚未并入分析（未完成核对或存在逻辑错误），无法判断']],
+                            columns=['项目', '说明'])
+    ok = inc[inc['提取已核对']]
+    rows = [('已核对例数（判断分母）', str(len(ok)))]
+    ratios = {}
+    for c in ext.FEED:
+        v = ok[c]
+        n_nr = int((v == 'NR').sum())
+        ratios[c] = (n_nr / len(v)) if len(v) else np.nan
+        rows.append(('%s：NR 比例' % c,
+                     '%d/%d (%.1f%%)' % (n_nr, len(v), 100 * ratios[c]) if len(v) else '—（尚无已核对病例）'))
+    compare = len(ok) > 0 and all(pd.notna(r) and r <= threshold for r in ratios.values())
+    if compare:
+        rows.append(('判断结果（预先锁定：仅依据缺失比例，不依据组间差异）',
+                     '两项 NR 比例均 ≤%d%%，转为组间比较（Kruskal–Wallis），结果见下' % int(threshold * 100)))
+        for c in ext.FEED:
+            byg = {g: pd.to_numeric(ok.loc[ok['病因4'] == g, c], errors='coerce').dropna() for g in CAUSE4_ORDER}
+            usable = [v for v in byg.values() if len(v) > 0]
+            h, p = stats.kruskal(*usable) if len(usable) >= 2 else (np.nan, np.nan)
+            rows.append(('  %s，各病因中位数 (IQR)，n' % c,
+                        '；'.join('%s %s (n=%d)' % (g, med_iqr(byg[g]), len(byg[g])) for g in CAUSE4_ORDER)))
+            rows.append(('  %s，P（Kruskal–Wallis）' % c, fmt_p(p)))
+    else:
+        rows.append(('判断结果（预先锁定：仅依据缺失比例，不依据组间差异）',
+                     '至少一项 NR 比例 ＞%d%%（或尚无已核对病例），仅作描述性统计（见表 5），不作组间比较'
+                     % int(threshold * 100)))
+    return pd.DataFrame(rows, columns=['项目', '说明'])
+
+
 def monthly_frame(inc, mon, fbden):
     months = study_months()
     f = pd.DataFrame(index=months)
@@ -737,6 +771,7 @@ def main():
         '表4_趋势分析': trend_table(inc, f),
         '表4附_分期率': rate_table(f),
         '表5_治疗与结局': table5(inc),
+        '表5附_进食时间判定': feeding_decision(inc),
         '补充_裁定一致性': kappa,
         '补充_第6项核对': completeness_table(m6),
         '补充_逐月数据': f.assign(月份=f.index.astype(str)).reset_index(drop=True),
@@ -752,6 +787,8 @@ def main():
                           '%s 至 %s' % GAP if GAP else '无')),
             ('分母', '；'.join('%s：%s' % kv for kv in den_notes.items()) or '病案室分母尚未回填，相对发生率分析已跳过'),
             ('次要终点提取表', ext_note),
+            ('进食时间判断', '见“表5附_进食时间判定”：按 SAP 3.6，仅依 HIS 补查完成后的 NR 比例（阈值 30%）'
+                          '决定是否转为组间比较，与检验结果无关'),
             ('随机种子', '%d（主要分析置换 %d 次，列联表蒙特卡洛 %d 次）' % (SEED, N_PERM, N_PERM_TAB)),
             ('软件', 'Python %s；pandas %s；numpy %s；scipy %s；statsmodels %s'
                      % (platform.python_version(), pd.__version__, np.__version__, scipy.__version__,

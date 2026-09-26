@@ -7,6 +7,7 @@
   · 胃十二指肠穿孔.xlsx              科研平台导出（出院科别、检验、出院诊断编码）
   · 病案数据调取_填报模板_v1.xlsx     病案室回填的分母（第1、2、5项）与编码核对（第6项）；未回填时相关分析自动跳过
   · 消化道异物_逐月住院人次_v1.xlsx   异物（T18）住院人次，异物穿孔转化率的分母
+  · 次要终点提取表_v1.xlsx           临床表现、并发症、再次手术与进食时间；全部纳入病例核对完成且无逻辑错误时才纳入
 输出：
   · 分析结果_病因谱_v1.xlsx          SAP 第五节所列各表及趋势分析汇总
   · 图2_逐年病因构成_v1.png          逐年病例数按病因堆叠；有分母时下方另列相对发生率（两幅上下对齐，不用双纵轴）
@@ -34,6 +35,7 @@ from scipy import stats
 from scipy.special import gammaln
 
 import build_data_request_template as req
+import build_extraction_sheet as ext
 from merge_adjudication import norm
 
 SRC = r'D:\胃十二指肠穿孔\胃十二指肠穿孔.xlsx'
@@ -43,6 +45,7 @@ DENOM = DIR + r'\病案数据调取_填报模板_v1.xlsx'
 FB = DIR + r'\消化道异物_逐月住院人次_v1.xlsx'
 OUT = DIR + r'\分析结果_病因谱_v1.xlsx'
 FIG = DIR + r'\图2_逐年病因构成_v1.png'
+EXTRACT = r'D:\胃十二指肠穿孔\次要终点提取表_v1.xlsx'
 
 KEY = '科研就诊编号'
 SEED = 20260926
@@ -177,6 +180,38 @@ def add_clinical(inc):
     inc['入院CRP'] = inc[KEY].map(first_within_48h('实验室检查_血C反应蛋白（CRP）测定',
                                                    ['C反应蛋白定量-定量结果', '超敏C反应蛋白定量-定量结果']))
     return inc
+
+
+def add_extraction(inc, draft):
+    """术后住院天数与检索集内 30 天再入院由源数据自动计算；提取表变量仅在全部纳入病例核对完成、
+    且提取表“逻辑核查”无错误时并入（草稿模式下只并入已核对病例）。返回 (inc, 说明)。"""
+    auto = ext.auto_frame(SRC)
+    inc['术后住院天数'] = inc[KEY].map(auto['术后住院天数'])
+    inc['30天再入院'] = inc[KEY].map(auto['检索集内30天再入院']).fillna('').str.startswith('是')
+    if not os.path.exists(EXTRACT):
+        return inc, '提取表不存在，临床表现与并发症等变量未纳入'
+    e = pd.read_excel(EXTRACT, sheet_name='提取表', dtype=object, keep_default_na=False)
+    e[KEY] = e[KEY].map(norm)
+    e = e.drop_duplicates(KEY).set_index(KEY)
+    done = inc[KEY].map(lambda k: k in e.index and norm(e.at[k, '核对者']) != '')
+    chk = pd.read_excel(EXTRACT, sheet_name='逻辑核查', dtype=object, keep_default_na=False)
+    n_err = int(((chk['级别'] == '错误') & chk[KEY].map(norm).isin(set(inc[KEY]))).sum()) if not chk.empty else 0
+    if (not done.all() or n_err) and not draft:
+        return inc, ('提取表尚未就绪（已核对 %d/%d 例，逻辑错误 %d 条），临床表现与并发症等变量未纳入'
+                     % (done.sum(), len(inc), n_err))
+    for c in ext.MANUAL_COLS:
+        inc[c] = [norm(e.at[k, c]) if ok else '' for k, ok in zip(inc[KEY], done)]
+    inc['提取已核对'] = done.values
+    return inc, '已并入提取表（已核对 %d/%d 例%s）' % (done.sum(), len(inc), '，草稿' if not done.all() or n_err else '')
+
+
+def _known(v, unknown=('', '不详', '未查', 'NR', '不适用')):
+    return ~v.isin(unknown)
+
+
+def k_of_n(mask, known):
+    k, n = int((mask & known).sum()), int(known.sum())
+    return '%d/%d (%.1f)' % (k, n, 100 * k / n) if n else '—'
 
 
 def _matrix(sheet, cols):
@@ -397,6 +432,16 @@ def table1(inc):
         p = stats.kruskal(*[v for v in vals if len(v)])[1] if sum(len(v) > 0 for v in vals) >= 2 else np.nan
         row(label + '，中位数 (IQR)', lambda g, col=col: med_iqr(g[col]), fmt_p(p))
         row('  缺失，n', lambda g, col=col: str(int(pd.to_numeric(g[col], errors='coerce').isna().sum())))
+    if '提取已核对' in inc:                           # 提取表变量：分母为记录明确者（不含不详、未查、NR）
+        inc_ok = inc[inc['提取已核对']]
+        vals = [pd.to_numeric(g.loc[g['提取已核对'], '主诉病程_小时'], errors='coerce').dropna() for _, g in groups[1:]]
+        p = stats.kruskal(*[v for v in vals if len(v)])[1] if sum(len(v) > 0 for v in vals) >= 2 else np.nan
+        row('主诉病程（小时），中位数 (IQR)',
+            lambda g: med_iqr(pd.to_numeric(g.loc[g['提取已核对'], '主诉病程_小时'], errors='coerce')), fmt_p(p))
+        for c, pos in [(s, '是') for s in ext.SYMPTOMS] + [('影像游离气体_治疗前', '有')]:
+            kn = _known(inc_ok[c])
+            row('%s，n/N (%%)' % c, lambda g, c=c, pos=pos: k_of_n(g[c] == pos, g['提取已核对'] & _known(g[c])),
+                fmt_p(perm_rxc(inc_ok.loc[kn, c], inc_ok.loc[kn, '病因4'])))
     return pd.DataFrame(rows, columns=['变量'] + [n for n, _ in groups] + ['P'])
 
 
@@ -455,6 +500,24 @@ def table5(inc):
                 [med_iqr(pd.to_numeric(g.loc[g['磁性'] == 1, '磁性异物枚数'], errors='coerce')) for _, g in groups])
     rows.append(['  枚数记录为 NR，n'] + [str(int((g.loc[g['磁性'] == 1, '磁性异物枚数'] == 'NR').sum())) for _, g in groups])
     assert len(mag) == int(inc['磁性'].sum())
+    rows.append(['术后住院天数，中位数 (IQR)'] + [med_iqr(g['术后住院天数']) for _, g in groups])
+    rows.append(['检索集内 30 天再入院'] + [n_pct(g['30天再入院'], len(g)) for _, g in groups])
+    if '提取已核对' in inc:
+        ok = [(n, g[g['提取已核对']]) for n, g in groups]
+        anyc = lambda g: g[ext.COMPLICATIONS].eq('是').any(axis=1) | (g['其他并发症'] != '')
+        rows.append(['住院期间并发症（至少一项），n/N (%)'] + [k_of_n(anyc(g), pd.Series(True, index=g.index)) for _, g in ok])
+        for c in ext.COMPLICATIONS:
+            rows.append(['  %s' % c] + [k_of_n(g[c] == '是', _known(g[c])) for _, g in ok])
+        grade = {v: i for i, v in enumerate(ext.CLAVIEN)}
+        rows.append(['Clavien–Dindo ≥III，n/N (%)'] +
+                    [k_of_n(g['最高Clavien-Dindo分级'].map(grade) >= grade['IIIa'], _known(g['最高Clavien-Dindo分级']))
+                     for _, g in ok])
+        rows.append(['非计划再次手术（手术病例），n/N (%)'] +
+                    [k_of_n(g['非计划再次手术'] == '是', _known(g['非计划再次手术'])) for _, g in ok])
+        rows.append(['非手术再干预，n/N (%)'] + [k_of_n(g['非手术再干预'] == '是', _known(g['非手术再干预'])) for _, g in ok])
+        for c in ext.FEED:
+            rows.append(['%s，中位数 (IQR)' % c] + [med_iqr(pd.to_numeric(g[c], errors='coerce')) for _, g in ok])
+            rows.append(['  记录缺失（NR），n/N'] + ['%d/%d' % ((g[c] == 'NR').sum(), len(g)) for _, g in ok])
     return pd.DataFrame(rows, columns=['项目'] + [n for n, _ in groups])
 
 
@@ -660,6 +723,7 @@ def main():
     draft = '--draft' in sys.argv[1:]
     all_, inc, unfinished, status = load_cases(draft)
     inc = add_clinical(inc)
+    inc, ext_note = add_extraction(inc, draft)
     mon, den_notes, m6 = load_denoms()
     fbden = load_fb()
     f = monthly_frame(inc, mon, fbden)
@@ -677,15 +741,17 @@ def main():
         '补充_第6项核对': completeness_table(m6),
         '补充_逐月数据': f.assign(月份=f.index.astype(str)).reset_index(drop=True),
     }
-    inputs = [MERGED, SRC, FB] + ([DENOM] if os.path.exists(DENOM) else [])
+    inputs = [MERGED, SRC, FB] + [p for p in (DENOM, EXTRACT) if os.path.exists(p)]
     info = pd.DataFrame(
-        ([('★草稿', '终裁未完成（%s），仅分析已定稿病例，结果不得引用' % status)] if draft else []) + [
+        ([('★草稿', '以 --draft 运行，结果不得引用。终裁状态：%s（草稿模式仅分析已定稿病例）；次要终点提取表：%s'
+                    % (status, ext_note))] if draft else []) + [
             ('生成时间', datetime.now().strftime('%Y-%m-%d %H:%M')),
             ('依据', '统计分析计划_SAP_v1（各表编号与 SAP 第五节一致）'),
             ('纳入集', '%d 例；有效观察月 %d 个（研究窗口 %s 至 %s，扣除断档 %s）'
                        % (len(inc), len(study_months()), STUDY[0], STUDY[1],
                           '%s 至 %s' % GAP if GAP else '无')),
             ('分母', '；'.join('%s：%s' % kv for kv in den_notes.items()) or '病案室分母尚未回填，相对发生率分析已跳过'),
+            ('次要终点提取表', ext_note),
             ('随机种子', '%d（主要分析置换 %d 次，列联表蒙特卡洛 %d 次）' % (SEED, N_PERM, N_PERM_TAB)),
             ('软件', 'Python %s；pandas %s；numpy %s；scipy %s；statsmodels %s'
                      % (platform.python_version(), pd.__version__, np.__version__, scipy.__version__,

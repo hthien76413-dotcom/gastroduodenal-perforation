@@ -49,13 +49,24 @@ For the analysis, trauma, iatrogenic and other or undetermined causes were combi
 
 ## Variables
 
-The following variables were extracted:
+The following variables were obtained automatically from the extracted records:
 - sex and age at admission;
-- length of stay;
-- the first white blood cell count and C-reactive protein concentration within 48 hours of admission;
+- length of stay and postoperative length of stay;
+- readmission for the same perforation within 30 days of discharge;
+- the first white blood cell count and C-reactive protein concentration within 48 hours of admission.
+
+The following were recorded during adjudication:
 - site and number of perforations;
 - treatment approach (open surgery, laparoscopy, conversion to open surgery, endoscopy or non-operative management);
 - in-hospital outcome.
+
+The following were abstracted by one investigator using predefined operational definitions and verified case by case by a second investigator [initials]:
+- clinical presentation: duration of symptoms before admission, abdominal pain, vomiting, fever, abdominal distension, peritoneal signs, shock or sepsis at admission, and pneumoperitoneum on radiography or CT before treatment;
+- in-hospital complications, with the highest grade by the Clavien–Dindo classification;
+- unplanned reoperation and non-operative reintervention;
+- time to first and to full enteral feeding, counted from the day of the first operation, or from admission in children managed non-operatively.
+
+Progress notes were not part of the data extraction. Items not documented in the admission, operative or discharge records were therefore sought in the hospital information system, and items that remained undocumented were recorded as unknown.
 
 Age was grouped as neonate (≤28 days), infant or toddler (29 days to <3 years), preschool (3 to <6 years) and school age (≥6 years). A composite adverse outcome was defined as in-hospital death or discharge after the family declined further treatment.
 

@@ -3,9 +3,17 @@
 课题④ 儿童胃十二指肠穿孔 —— 生成双人裁定工作表
 从 HIS 导出的 胃十二指肠穿孔.xlsx 汇总每例的判定依据文本，附空白裁定列。
 
+输出三份文件：
+  · 裁定工作表_v1.xlsx         总表，含机器初筛提示，仅供仲裁者参考；
+  · 裁定工作表_v1_裁定者A.xlsx  裁定者 A 的盲表；
+  · 裁定工作表_v1_裁定者B.xlsx  裁定者 B 的盲表。
+盲表去掉「机器初筛提示」「磁性关键词命中」两列：两人若看到同一条提示，判定会被同一方向牵引，
+κ 虚高，也就谈不上「独立」。两份盲表填完后用 merge_adjudication.py 计算 κ 并生成仲裁清单。
+
 安全约定（吸取以往脚本覆盖已填 Excel 的教训）：
   1. 目标文件若已存在，先备份为 *.backup_时间戳.xlsx；
   2. 再按【科研就诊编号】把旧文件里已填写的裁定列逐条回填到新表，绝不清空人工劳动；
+     A、B 两份盲表各自只从本人的旧盲表回填，互不串用；
   3. 所有写盘动作只在 __main__ 中触发，import 本模块不产生任何副作用。
 """
 import os
@@ -39,7 +47,13 @@ OPTIONS = {
     'HP状态': ['阳性', '阴性', '未查'],
     '结局': ['治愈出院', '好转出院', '放弃治疗', '院内死亡'],
     '是否排除': ['否', '是'],
+    '排除理由': ['E1部位非胃十二指肠', 'E2无活动性穿孔', 'E3外院术后转入',
+                 'E4同次穿孔再住院', 'E5资料严重缺失'],
 }
+
+# 盲表中去掉的列：机器生成、直接指向病因的提示
+HINT_COLS = ['机器初筛提示', '磁性关键词命中']
+RATERS = ('A', 'B')
 
 CRITERIA = [
     ('分类总则', '以手术经过 + 术中诊断为第一依据，现病史次之，出院诊断编码仅作参考。'
@@ -61,12 +75,22 @@ CRITERIA = [
                'E2 本次住院并无活动性穿孔（如仅为溃疡、术后复查、拔管或造影随访）；\n'
                'E3 穿孔已在外院手术处理后转入我院，本次住院处理的是并发症；\n'
                'E4 同一患儿因同一次穿孔的再次住院——保留首次收治的那次住院，'
-               '后续住院排除（其信息可回补到首次记录的并发症/再手术字段）。\n'
+               '后续住院排除（其信息可回补到首次记录的并发症/再手术字段）；\n'
+               'E5 病案资料严重缺失：已回 HIS 调阅原始病历（入院记录、手术记录、出院记录、'
+               '影像及内镜报告）后，仍无法获得判定病因所需的任何依据。'
+               '仅因科研平台导出缺少出院小结或手术记录者，不得直接按 E5 排除。\n'
                '注意：保守治疗成功者与家属拒绝手术者**不属于排除**，应正常纳入并在'
                '“手术入路”填“未手术”。'),
+    ('填写一致性', '病因大类填“9排除”时，是否排除必须填“是”并选择排除理由，反之亦然；'
+                   '异物类型仅在病因大类为“1异物相关”时填磁性/非磁性，其余填 NA；'
+                   '磁性异物须填枚数（正整数，记不清写 NR）；'
+                   '纳入病例须填写穿孔部位、手术入路与结局。'
+                   'merge_adjudication.py 会逐条核查，不一致之处列入“逻辑核查”表退回本人修改。'),
     ('数据完整性标记', '本列由脚本自动生成，标出无手术记录、无出院小结、非首次住院的病例。'
                        '带标记者请优先裁定：它们既是排除条目 E2-E4 的高发人群，'
-                       '也可能是真实的非手术治疗病例，两者必须逐例读现病史区分，不得一律排除。'),
+                       '也可能是真实的非手术治疗病例，两者必须逐例读现病史区分，不得一律排除。'
+                       '标“无出院小结”“无手术记录”者先回 HIS 调阅原始病历，'
+                       '多为科研平台尚未同步，不等于病历缺失。'),
     ('穿孔部位', '按穿孔的解剖位置填写，仅限胃 / 十二指肠 / 两者兼有。'
                  '若同时存在空肠、回肠、结肠穿孔，另填“合并其他消化道穿孔”。'),
     ('结局', '“放弃治疗”指家属签字放弃后出院者，分析时与院内死亡合并为复合不良结局。'),
@@ -166,7 +190,8 @@ def build_frame():
         lambda t: _join(pd.Series(re.findall(r'磁珠|磁力珠|磁铁|巴克球|磁性', str(t))), '/') or '')
 
     for c in ADJ_COLS:
-        df[c] = ''
+        # 显式 object 列：pandas 3 会把全 '' 列推断为严格字符串类型，回填数字（枚数、穿孔数目）时报错
+        df[c] = pd.Series('', index=df.index, dtype=object)
 
     # 把优先核查标记提到前列，避免被右侧长文本淹没
     cols = list(df.columns)
@@ -191,11 +216,18 @@ def _hint(t):
     return '?6其他/待读'
 
 
-def carry_over(df):
+def rater_path(rater):
+    """裁定者盲表路径，与总表同目录。"""
+    return DST.replace('.xlsx', '_裁定者%s.xlsx' % rater)
+
+
+def carry_over(df, path=None):
     """把旧文件里已填写的裁定列按就诊编号回填，返回回填条数。"""
-    if not os.path.exists(DST):
+    path = path or DST
+    if not os.path.exists(path):
         return 0
-    old = pd.read_excel(DST, sheet_name='裁定表')
+    # keep_default_na=False：否则已填的“NA”（异物类型）会被当成缺失值、重建时丢失
+    old = pd.read_excel(path, sheet_name='裁定表', keep_default_na=False)
     if KEY not in old.columns:
         return 0
     have = [c for c in ADJ_COLS if c in old.columns]
@@ -214,14 +246,24 @@ def carry_over(df):
     return n
 
 
-def write_workbook(df):
-    if os.path.exists(DST):
-        bak = DST.replace('.xlsx', '.backup_%s.xlsx' % datetime.now().strftime('%Y%m%d_%H%M%S'))
-        shutil.copy2(DST, bak)
+def write_workbook(df, path=None, rater=None):
+    """rater 为 None 时写总表；为 'A'/'B' 时写该裁定者的盲表（调用方须已去掉 HINT_COLS）。"""
+    path = path or DST
+    assert rater is None or not set(HINT_COLS) & set(df.columns), '盲表不得含机器提示列'
+    if os.path.exists(path):
+        bak = path.replace('.xlsx', '.backup_%s.xlsx' % datetime.now().strftime('%Y%m%d_%H%M%S'))
+        shutil.copy2(path, bak)
         print('已备份旧文件 ->', bak)
 
-    crit = pd.DataFrame(CRITERIA, columns=['条目', '操作性定义'])
-    with pd.ExcelWriter(DST, engine='openpyxl') as w:
+    if rater:
+        role = ('裁定者 %s 的独立裁定盲表。请独立完成：勿与另一名裁定者讨论病例，勿查看对方表格或总表'
+                '（总表含机器初筛提示）。填完后交课题负责人运行 merge_adjudication.py。' % rater)
+    else:
+        role = ('总表，含机器初筛提示，仅供仲裁者参考，请勿在本表中裁定。'
+                '两名裁定者分别在 %s 与 %s 中独立填写。'
+                % tuple(os.path.basename(rater_path(r)) for r in RATERS))
+    crit = pd.DataFrame([('本表用途', role)] + CRITERIA, columns=['条目', '操作性定义'])
+    with pd.ExcelWriter(path, engine='openpyxl') as w:
         crit.to_excel(w, sheet_name='分类标准', index=False)
         df.to_excel(w, sheet_name='裁定表', index=False)
 
@@ -267,13 +309,23 @@ def write_workbook(df):
         cw.column_dimensions['B'].width = 110
         for r in range(1, len(crit) + 2):
             cw.cell(row=r, column=2).alignment = Alignment(wrap_text=True, vertical='top')
-    print('已写出 ->', DST)
+        cw.cell(row=2, column=2).font = Font(bold=True, color='C00000')
+    print('已写出 ->', path)
 
 
 if __name__ == '__main__':
-    d = build_frame()
+    base = build_frame()
+
+    d = base.copy()
     n = carry_over(d)
-    print('汇总 %d 例；从旧文件回填已填写单元格 %d 个' % (len(d), n))
+    print('汇总 %d 例；总表从旧文件回填已填写单元格 %d 个' % (len(d), n))
     write_workbook(d)
+
+    for r in RATERS:
+        b = base.drop(columns=HINT_COLS)          # 每份盲表都从空白起步，只回填本人旧表
+        n = carry_over(b, rater_path(r))
+        print('裁定者 %s 盲表：从本人旧表回填已填写单元格 %d 个' % (r, n))
+        write_workbook(b, rater_path(r), rater=r)
+
     print('\n机器初筛提示分布（仅参考，不入统计）:')
-    print(d['机器初筛提示'].value_counts().to_string())
+    print(base['机器初筛提示'].value_counts().to_string())

@@ -1,0 +1,3666 @@
+{
+ "res": {
+  "A_儿童胃十二指肠穿孔_标题": {
+   "q": "(gastric perforation[ti] OR gastric perforations[ti] OR duodenal perforation[ti] OR gastroduodenal perforation[ti] OR perforated peptic ulcer[ti] OR perforated duodenal ulcer[ti] OR perforated gastric ulcer[ti]) AND (children[ti] OR child[ti] OR pediatric[ti] OR paediatric[ti] OR childhood[ti] OR infants[ti] OR adolescents[ti])",
+   "n_all": 91,
+   "n_nocr": 32,
+   "ids": [
+    "42351018",
+    "42088566",
+    "40611020",
+    "40092882",
+    "39709268",
+    "37168896",
+    "35189000",
+    "34008051",
+    "30992193",
+    "30448888",
+    "29079904",
+    "27843663",
+    "27695221",
+    "27686129",
+    "27454069",
+    "27362413",
+    "26989751",
+    "26386878",
+    "24948965",
+    "17592367",
+    "9914349",
+    "1079258",
+    "1079257",
+    "4846433",
+    "5020730",
+    "14019248",
+    "13409051",
+    "13355898",
+    "13279062",
+    "13098088",
+    "18145985",
+    "20990347"
+   ]
+  },
+  "B_儿童胃十二指肠穿孔_病因谱或趋势": {
+   "q": "(gastric perforation[tiab] OR duodenal perforation[tiab] OR gastroduodenal perforation[tiab] OR perforated peptic ulcer[tiab]) AND (child*[ti] OR pediatric[ti] OR paediatric[ti]) AND (etiolog*[tiab] OR aetiolog*[tiab] OR spectrum[tiab] OR trend*[tiab] OR decade*[tiab] OR changing[tiab])",
+   "n_all": 15,
+   "n_nocr": 8,
+   "ids": [
+    "42351018",
+    "30992193",
+    "30448888",
+    "19289311",
+    "9165318",
+    "9013172",
+    "8862373",
+    "8832927"
+   ]
+  },
+  "C_新生儿胃穿孔_标题": {
+   "q": "(neonatal gastric perforation[ti] OR gastric perforation in neonates[ti] OR gastric perforation in newborn*[ti] OR neonatal gastric rupture[ti] OR spontaneous gastric perforation[ti] OR neonatal gastric perforations[ti])",
+   "n_all": 172,
+   "n_nocr": 91,
+   "ids": [
+    "42701961",
+    "42303091",
+    "42097531",
+    "42088566",
+    "41974396",
+    "41850645",
+    "40924071",
+    "39928501",
+    "38096915",
+    "37944055",
+    "40626297",
+    "37750300",
+    "36720694",
+    "35501164",
+    "37168896",
+    "35281619",
+    "34923453",
+    "34393087",
+    "34327684",
+    "34055689",
+    "33963647",
+    "33963646",
+    "33388964",
+    "33184604",
+    "32939110",
+    "30711325",
+    "35897252",
+    "29670869",
+    "29392435",
+    "29079904",
+    "27712890",
+    "27686129",
+    "26965761",
+    "26668521",
+    "26290816",
+    "25957026",
+    "25278658",
+    "25186564",
+    "25161763",
+    "26023450",
+    "22529561",
+    "22009207",
+    "22000431",
+    "21176490",
+    "18947001",
+    "17875089",
+    "16615288",
+    "15080518",
+    "14999537",
+    "14989048",
+    "12415364",
+    "10917298",
+    "10813320",
+    "10668094",
+    "10228980",
+    "10022139",
+    "9639613",
+    "7595833",
+    "4034300",
+    "6689435",
+    "7120006",
+    "7277163",
+    "554595",
+    "1249515",
+    "4417953",
+    "4803533",
+    "4721352",
+    "4691859",
+    "4661538",
+    "5062498",
+    "5008136",
+    "5144580",
+    "5393028",
+    "5754269",
+    "5679411",
+    "5656223",
+    "4865050",
+    "5960246",
+    "5901201",
+    "14294146",
+    "14259188",
+    "14132489",
+    "14130627",
+    "14088279",
+    "14049553",
+    "13973417",
+    "13724110",
+    "13762621",
+    "13793066",
+    "13476323",
+    "13322696"
+   ]
+  },
+  "D_儿童溃疡穿孔": {
+   "q": "(peptic ulcer[tiab] OR duodenal ulcer[tiab] OR gastric ulcer[tiab]) AND perforat*[tiab] AND (child*[ti] OR pediatric[ti] OR paediatric[ti] OR adolescen*[ti])",
+   "n_all": 143,
+   "n_nocr": 93,
+   "ids": [
+    "41367508",
+    "40800653",
+    "40611020",
+    "40386338",
+    "40335985",
+    "38644127",
+    "37886238",
+    "37416425",
+    "36997985",
+    "35910757",
+    "34008051",
+    "30448888",
+    "29178963",
+    "29033302",
+    "27686129",
+    "27454069",
+    "26989751",
+    "26386878",
+    "24948965",
+    "22450248",
+    "19289311",
+    "19231539",
+    "17592367",
+    "17171378",
+    "17161209",
+    "16156406",
+    "16108750",
+    "15937829",
+    "10605523",
+    "10483184",
+    "9396537",
+    "9074277",
+    "8783092",
+    "7674616",
+    "2072794",
+    "1654645",
+    "1974285",
+    "2806828",
+    "2640288",
+    "3405676",
+    "3694366",
+    "3944750",
+    "4021371",
+    "6617045",
+    "6838371",
+    "6935880",
+    "710280",
+    "609231",
+    "1264465",
+    "4853569",
+    "4773413",
+    "5086503",
+    "5073585",
+    "5054089",
+    "5020730",
+    "5481406",
+    "6083330",
+    "14295947",
+    "14265231",
+    "14237415",
+    "5858525",
+    "14316424",
+    "14225285",
+    "14206735",
+    "14167414",
+    "14162559",
+    "14202971",
+    "14209727",
+    "14181922",
+    "14121784",
+    "14133239",
+    "14133159",
+    "14019248",
+    "14091953",
+    "14042547",
+    "14074721",
+    "14034639",
+    "13987318",
+    "14465424",
+    "13883122",
+    "14493374",
+    "14436979",
+    "13655462",
+    "13537088",
+    "13503143",
+    "13395122",
+    "13279062",
+    "13098088",
+    "15424616",
+    "18145985",
+    "20243815",
+    "20243729",
+    "20990347"
+   ]
+  },
+  "E_儿童磁性异物_标题": {
+   "q": "magnet*[ti] AND (ingest*[ti] OR swallow*[ti] OR foreign bod*[ti]) AND (child*[ti] OR pediatric[ti] OR paediatric[ti] OR infant*[ti])",
+   "n_all": 169,
+   "n_nocr": 109,
+   "ids": [
+    "42462356",
+    "42445573",
+    "42433914",
+    "42420962",
+    "42016634",
+    "41794329",
+    "41657462",
+    "41381185",
+    "41327985",
+    "41239316",
+    "40982172",
+    "40943994",
+    "40803406",
+    "40527817",
+    "40393707",
+    "40383554",
+    "40242406",
+    "39881940",
+    "39788622",
+    "39761080",
+    "39734900",
+    "39390097",
+    "39287501",
+    "38654816",
+    "38477241",
+    "38403623",
+    "38310610",
+    "38172693",
+    "37985250",
+    "37739765",
+    "37468604",
+    "37355569",
+    "37147269",
+    "37095012",
+    "37083691",
+    "36947000",
+    "36916247",
+    "36846273",
+    "36814129",
+    "36714638",
+    "36115782",
+    "36034063",
+    "35879696",
+    "35841278",
+    "35784204",
+    "35657136",
+    "35653435",
+    "34970806",
+    "34921053",
+    "34794926",
+    "34548505",
+    "34544782",
+    "34538505",
+    "34422734",
+    "34306593",
+    "34048089",
+    "34035037",
+    "33975824",
+    "33885423",
+    "33865355",
+    "33839906",
+    "33629380",
+    "33569845",
+    "33487231",
+    "33466161",
+    "33388957",
+    "33361046",
+    "33344597",
+    "33283527",
+    "33231653",
+    "32969961",
+    "32682694",
+    "32568410",
+    "32404763",
+    "32111182",
+    "32022777",
+    "31937446",
+    "31005048",
+    "30899689",
+    "30550179",
+    "30188872",
+    "30064579",
+    "29135818",
+    "28453326",
+    "28291530",
+    "30202341",
+    "25959833",
+    "25500066",
+    "24876984",
+    "24836391",
+    "24791640",
+    "24391087",
+    "24168883",
+    "24137035",
+    "24126829",
+    "23961544",
+    "23927958",
+    "23575300",
+    "23222984",
+    "22785419",
+    "22727803",
+    "22127484",
+    "22030770",
+    "11568539",
+    "5051741",
+    "4108953",
+    "5395065",
+    "5741405",
+    "13127805"
+   ]
+  },
+  "F_磁性异物_穿孔_病例系列": {
+   "q": "magnet*[tiab] AND ingest*[tiab] AND (child*[tiab] OR pediatric[tiab]) AND perforat*[tiab] AND (series[tiab] OR retrospective[tiab] OR multicent*[tiab] OR cohort[tiab])",
+   "n_all": 46,
+   "n_nocr": 39,
+   "ids": [
+    "42658005",
+    "42462356",
+    "42445573",
+    "42433914",
+    "42420962",
+    "42376025",
+    "41657462",
+    "41327985",
+    "39761080",
+    "38654816",
+    "38403623",
+    "38374556",
+    "38219195",
+    "38181541",
+    "37753493",
+    "36846273",
+    "36814129",
+    "35784204",
+    "35657136",
+    "35400217",
+    "34970806",
+    "34794926",
+    "34548505",
+    "34538505",
+    "34075452",
+    "33865355",
+    "33466161",
+    "33388957",
+    "32682694",
+    "32111182",
+    "31698913",
+    "28291530",
+    "28868450",
+    "26430203",
+    "24836391",
+    "23596362",
+    "22727803",
+    "11132474",
+    "9230535"
+   ]
+  },
+  "G_磁性异物_中国": {
+   "q": "magnet*[tiab] AND ingest*[tiab] AND (child*[tiab] OR pediatric[tiab]) AND (China[tiab] OR Chinese[tiab] OR China[ad])",
+   "n_all": 47,
+   "n_nocr": 37,
+   "ids": [
+    "42577709",
+    "42577497",
+    "42445573",
+    "42433914",
+    "42420962",
+    "42376025",
+    "42327912",
+    "42264127",
+    "41883687",
+    "41239316",
+    "40242406",
+    "39761080",
+    "39489680",
+    "39287501",
+    "38654816",
+    "38172693",
+    "37355569",
+    "36814129",
+    "36714638",
+    "36205322",
+    "35879696",
+    "35784204",
+    "35341853",
+    "34548505",
+    "33865355",
+    "33713066",
+    "33466161",
+    "33388957",
+    "33361046",
+    "33344597",
+    "32682694",
+    "32111182",
+    "28930851",
+    "27324576",
+    "22886320",
+    "22030770",
+    "20395092"
+   ]
+  },
+  "H_磁性异物_流行病学趋势": {
+   "q": "magnet*[tiab] AND ingest*[tiab] AND (child*[tiab] OR pediatric[tiab]) AND (trend*[tiab] OR incidence[tiab] OR epidemiolog*[tiab] OR NEISS[tiab] OR emergency department visits[tiab] OR regulation*[tiab])",
+   "n_all": 79,
+   "n_nocr": 71,
+   "ids": [
+    "42714639",
+    "42658005",
+    "42580657",
+    "42514240",
+    "42481101",
+    "42433914",
+    "42007737",
+    "41883687",
+    "41592955",
+    "41362525",
+    "41327985",
+    "41153526",
+    "40943994",
+    "40831810",
+    "40814587",
+    "40393707",
+    "40383554",
+    "39761080",
+    "39489680",
+    "39177065",
+    "38869345",
+    "38654816",
+    "38374556",
+    "37985250",
+    "37641921",
+    "37575898",
+    "37083691",
+    "36947000",
+    "36714638",
+    "36228258",
+    "36115782",
+    "35984456",
+    "35653435",
+    "35112127",
+    "34970806",
+    "34823462",
+    "34794926",
+    "34724360",
+    "34544782",
+    "34538505",
+    "34422734",
+    "33936796",
+    "33839906",
+    "33738669",
+    "33516676",
+    "33231653",
+    "32969961",
+    "32568410",
+    "32317194",
+    "32111182",
+    "30188872",
+    "29462339",
+    "29135818",
+    "28665528",
+    "28502435",
+    "28291530",
+    "28868450",
+    "26430203",
+    "30202341",
+    "25959833",
+    "24836391",
+    "24791640",
+    "24168883",
+    "24137035",
+    "24093905",
+    "23961545",
+    "23927958",
+    "23575300",
+    "22030770",
+    "15913481",
+    "2054408"
+   ]
+  },
+  "I_儿童胃十二指肠穿孔_中国作者": {
+   "q": "(gastric perforation[tiab] OR duodenal perforation[tiab] OR gastroduodenal perforation[tiab]) AND (child*[ti] OR pediatric[ti] OR neonat*[ti]) AND China[ad]",
+   "n_all": 25,
+   "n_nocr": 19,
+   "ids": [
+    "42351018",
+    "42097531",
+    "41974396",
+    "39989137",
+    "39657318",
+    "40626297",
+    "37750300",
+    "36997985",
+    "34878346",
+    "34055689",
+    "30992193",
+    "30448888",
+    "29392435",
+    "26965761",
+    "26211770",
+    "24910758",
+    "22000431",
+    "21176490",
+    "16615288"
+   ]
+  }
+ },
+ "dump": {
+  "A_儿童胃十二指肠穿孔_标题": [
+   {
+    "pmid": "42351018",
+    "year": "2026",
+    "journal": "BMC Pediatr",
+    "title": "Multidisciplinary approach for treatment of duodenal perforation complicated with gastrointestinal hemorrhage in pediatric patient and relevant literature review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhu R"
+   },
+   {
+    "pmid": "42088566",
+    "year": "2026",
+    "journal": "Case Rep Pediatr",
+    "title": "Spontaneous Gastric Perforation in a Healthy Child Associated With Sarcina ventriculi Infection.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Nikolic D"
+   },
+   {
+    "pmid": "40611020",
+    "year": "2025",
+    "journal": "BMC Surg",
+    "title": "Comparison of trans-umbilical single-port laparoscopic surgery and laparotomy for repair of perforated peptic ulcer in pediatric patients: a retrospective study.",
+    "ptype": [
+     "Journal Article",
+     "Comparative Study"
+    ],
+    "au": "Jiang JH"
+   },
+   {
+    "pmid": "40092882",
+    "year": "2024",
+    "journal": "Bioinformation",
+    "title": "Silent rupture: The hidden danger of gastric perforation in paediatric blunt trauma: A case report.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chotra A"
+   },
+   {
+    "pmid": "39709268",
+    "year": "2025",
+    "journal": "Pediatr Neonatol",
+    "title": "Clinical course and management of pediatric gastroduodenal perforation beyond neonatal period.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Takamoto N"
+   },
+   {
+    "pmid": "37168896",
+    "year": "2022",
+    "journal": "JPGN Rep",
+    "title": "Spontaneous Gastric Perforation in a Child and Endoscopic Balloon Dilation for Postoperative Gastric Stenosis.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Cunningham BS"
+   },
+   {
+    "pmid": "35189000",
+    "year": "2022",
+    "journal": "Pediatr Int",
+    "title": "Conservative treatment for duodenal perforation after blunt trauma in a child.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Hoshi R"
+   },
+   {
+    "pmid": "34008051",
+    "year": "2021",
+    "journal": "Indian J Pediatr",
+    "title": "Gastropleural Fistula in a Child with Acute Lymphoblastic Leukemia Due to Perforated Gastric Ulcer.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Khera S"
+   },
+   {
+    "pmid": "30992193",
+    "year": "2019",
+    "journal": "Pediatr Neonatol",
+    "title": "Pediatric gastric perforation beyond neonatal period: 8-year experience with 20 patients.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "30448888",
+    "year": "2019",
+    "journal": "Pediatr Surg Int",
+    "title": "Gastroduodenal perforation in the pediatric population: a retrospective analysis of 20 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yan X"
+   },
+   {
+    "pmid": "29079904",
+    "year": "2018",
+    "journal": "Pediatr Surg Int",
+    "title": "Neonatal gastric perforations in very low birth weight infants: a single center experience and review of the literature.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Babayigit A"
+   },
+   {
+    "pmid": "27843663",
+    "year": "2016",
+    "journal": "Case Rep Pediatr",
+    "title": "A Child with Severe Malaria Presenting with Acute Surgical Abdomen (Duodenal Perforation).",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Bhandari TR"
+   },
+   {
+    "pmid": "27695221",
+    "year": "2016",
+    "journal": "J Indian Assoc Pediatr Surg",
+    "title": "Eventration of diaphragm with gastric perforation in a child: A rare presentation.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Mandal KC"
+   },
+   {
+    "pmid": "27686129",
+    "year": "2016",
+    "journal": "Am J Case Rep",
+    "title": "Spontaneous Gastric Perforation in Two Adolescents.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Akalonu A"
+   },
+   {
+    "pmid": "27454069",
+    "year": "2017",
+    "journal": "Eur J Pediatr Surg",
+    "title": "Laparoscopic Repair for Perforated Peptic Ulcer in Children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Reusens H"
+   },
+   {
+    "pmid": "27362413",
+    "year": "2016",
+    "journal": "Klin Padiatr",
+    "title": "The Importance of Computed Tomography for the Diagnosis Of Duodenal Perforation in a Paediatric Patient with Juvenile Dermatomyositis.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Schneider KO"
+   },
+   {
+    "pmid": "26989751",
+    "year": "2016",
+    "journal": "Open Forum Infect Dis",
+    "title": "Gastroduodenal Perforation and Ulcer Associated With Rotavirus and Norovirus Infections in Japanese Children: A Case Report and Comprehensive Literature Review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ueda N"
+   },
+   {
+    "pmid": "26386878",
+    "year": "2015",
+    "journal": "J Pediatr Surg",
+    "title": "Laparoscopic versus open operation for perforated peptic ulcer in pediatric patients: A 10-year experience.",
+    "ptype": [
+     "Comparative Study",
+     "Evaluation Study",
+     "Journal Article"
+    ],
+    "au": "Wong CW"
+   },
+   {
+    "pmid": "24948965",
+    "year": "2014",
+    "journal": "Pak J Med Sci",
+    "title": "Simple patch closure for perforated peptic ulcer in children followed by helicobacter pylori eradication.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yildiz T"
+   },
+   {
+    "pmid": "17592367",
+    "year": "2007",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Perforated peptic ulcer in children: a 20-year experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Hua MC"
+   },
+   {
+    "pmid": "9914349",
+    "year": "1999",
+    "journal": "Pediatr Surg Int",
+    "title": "Gastric perforation in infants with oesophageal atresia and distal tracheo-oesophageal fistula.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Maoate K"
+   },
+   {
+    "pmid": "1079258",
+    "year": "1975",
+    "journal": "J Trauma",
+    "title": "Gastric perforation secondary to blunt trauma in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Asch MJ"
+   },
+   {
+    "pmid": "1079257",
+    "year": "1975",
+    "journal": "J Trauma",
+    "title": "Traumatic gastric perforation in children from blunt trauma.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Vassy LE"
+   },
+   {
+    "pmid": "4846433",
+    "year": "1974",
+    "journal": "J Trauma",
+    "title": "Case reports. Gastric perforation and child abuse.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Schechner SA"
+   },
+   {
+    "pmid": "5020730",
+    "year": "1972",
+    "journal": "Br J Surg",
+    "title": "Perforated duodenal ulcer in childhood.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Johnstone JM"
+   },
+   {
+    "pmid": "14019248",
+    "year": "1963",
+    "journal": "Med J Aust",
+    "title": "Perforated peptic ulcer in childhood.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "CASTLE J"
+   },
+   {
+    "pmid": "13409051",
+    "year": "1957",
+    "journal": "S Afr Med J",
+    "title": "Gastric perforation due to the fungus Mucor in a child with kwashiorkor.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "WATSON KC"
+   },
+   {
+    "pmid": "13355898",
+    "year": "1956",
+    "journal": "Bol Med Hosp Infant Mex",
+    "title": "[Perforated gastric ulcer in infants; a case of congenital pyloric stenosis with perforated gastric ulcer and recovery in a 3-month old infant].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "SARINANA C"
+   },
+   {
+    "pmid": "13279062",
+    "year": "1955",
+    "journal": "Kinderarztl Prax",
+    "title": "[Localized peritonitis of bursa omentalis caused by perforated duodenal ulcer in a one-year old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "GRUBE E"
+   },
+   {
+    "pmid": "13098088",
+    "year": "1953",
+    "journal": "Lancet",
+    "title": "Perforated duodenal ulcer in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "BELL DM"
+   },
+   {
+    "pmid": "18145985",
+    "year": "1949",
+    "journal": "Grace Hosp Bul",
+    "title": "Perforated peptic ulcer in a Meckel's diverticulum in a child; a case report.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "REYNOLDS RP"
+   },
+   {
+    "pmid": "20990347",
+    "year": "1946",
+    "journal": "Nurs Mirror Midwives J",
+    "title": "Perforated duodenal ulcer in a child of 12 years.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "CHIPPENDALE M"
+   }
+  ],
+  "B_儿童胃十二指肠穿孔_病因谱或趋势": [
+   {
+    "pmid": "42351018",
+    "year": "2026",
+    "journal": "BMC Pediatr",
+    "title": "Multidisciplinary approach for treatment of duodenal perforation complicated with gastrointestinal hemorrhage in pediatric patient and relevant literature review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhu R"
+   },
+   {
+    "pmid": "30992193",
+    "year": "2019",
+    "journal": "Pediatr Neonatol",
+    "title": "Pediatric gastric perforation beyond neonatal period: 8-year experience with 20 patients.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "30448888",
+    "year": "2019",
+    "journal": "Pediatr Surg Int",
+    "title": "Gastroduodenal perforation in the pediatric population: a retrospective analysis of 20 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yan X"
+   },
+   {
+    "pmid": "19289311",
+    "year": "2009",
+    "journal": "Kaohsiung J Med Sci",
+    "title": "Children presenting at the emergency department with right lower quadrant pain.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lin CH"
+   },
+   {
+    "pmid": "9165318",
+    "year": "1997",
+    "journal": "Gastrointest Endosc",
+    "title": "Use of conscious sedation for lower and upper gastrointestinal endoscopic examinations in children, adolescents, and young adults: a twelve-year review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Balsells F"
+   },
+   {
+    "pmid": "9013172",
+    "year": "1997",
+    "journal": "Gastrointest Endosc",
+    "title": "Complications following percutaneous endoscopic gastrostomy and subsequent catheter replacement in children and young adults.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Fox VL"
+   },
+   {
+    "pmid": "8862373",
+    "year": "1996",
+    "journal": "Surgery",
+    "title": "Gastrointestinal perforation and peritonitis in infants and children: experience with 179 cases over ten years.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Grosfeld JL"
+   },
+   {
+    "pmid": "8832927",
+    "year": "1996",
+    "journal": "J Laparoendosc Surg",
+    "title": "The use of laparoscopy in the management of seat belt trauma in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "VanderKolk WE"
+   }
+  ],
+  "F_磁性异物_穿孔_病例系列": [
+   {
+    "pmid": "42658005",
+    "year": "2026",
+    "journal": "Acta Paediatr",
+    "title": "Surgical Complications From Foreign Body Ingestion in Paediatric Age: An Italian Retrospective Multicentre Study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Salatto A"
+   },
+   {
+    "pmid": "42462356",
+    "year": "2026",
+    "journal": "Surgery",
+    "title": "Developing a management protocol for magnet ingestion in pediatric patients.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Dixon SM"
+   },
+   {
+    "pmid": "42445573",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Clinical features and surgical treatment of magnetic bead ingestion in children: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chen Y"
+   },
+   {
+    "pmid": "42433914",
+    "year": "2026",
+    "journal": "Transl Pediatr",
+    "title": "Clinical characteristics and therapeutic experiences of magnetic foreign body ingestion in children: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yang B"
+   },
+   {
+    "pmid": "42420962",
+    "year": "2026",
+    "journal": "BMC Pediatr",
+    "title": "Algorithm-driven management of pediatric multiple magnetic foreign bodies: a single-center experience of 171 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Dong M"
+   },
+   {
+    "pmid": "42376025",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Imaging characteristics of gastrointestinal foreign bodies in children and analysis of risk factors associated with the severity of complications.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Du H"
+   },
+   {
+    "pmid": "41657462",
+    "year": "2026",
+    "journal": "Transl Pediatr",
+    "title": "Is surgery always necessary for multiple magnet ingestion in children?-evidence for an endoscopy-first approach.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Kim H"
+   },
+   {
+    "pmid": "41327985",
+    "year": "2025",
+    "journal": "Turk J Pediatr",
+    "title": "The danger of magnet attraction: an 11-year cohort of pediatric intestinal complications due to magnet ingestion.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Varlıklı O"
+   },
+   {
+    "pmid": "39761080",
+    "year": "2025",
+    "journal": "J Laparoendosc Adv Surg Tech A",
+    "title": "Individualized Treatment of Multiple Magnetic Foreign Body Ingestion in Children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chen Y"
+   },
+   {
+    "pmid": "38654816",
+    "year": "2024",
+    "journal": "Qatar Med J",
+    "title": "Surgical treatment of multiple magnet ingestion by children: A single-center experience from China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhang C"
+   },
+   {
+    "pmid": "38403623",
+    "year": "2024",
+    "journal": "Sci Rep",
+    "title": "Magnet ingestion in growing children: a multi-center observational study on single and multiple magnet incidents.",
+    "ptype": [
+     "Multicenter Study",
+     "Observational Study",
+     "Journal Article"
+    ],
+    "au": "Alansari AN"
+   },
+   {
+    "pmid": "38374556",
+    "year": "2024",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Management patterns of multiple magnet ingestion reported to New Jersey Poison Information and Education System.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Nguyen TT"
+   },
+   {
+    "pmid": "38219195",
+    "year": "2024",
+    "journal": "J Pak Med Assoc",
+    "title": "Complications related to unwitnessed magnet ingestion in paediatrics: Case series.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Kumar S"
+   },
+   {
+    "pmid": "38181541",
+    "year": "2024",
+    "journal": "Am J Emerg Med",
+    "title": "Yield of abdominal radiographs in children with suspected intussusception; rate of pneumoperitoneum and other abdominal pathology.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Gruenberg B"
+   },
+   {
+    "pmid": "37753493",
+    "year": "2023",
+    "journal": "World J Clin Pediatr",
+    "title": "Accidental ingestion of foreign bodies/harmful materials in children from Bahrain: A retrospective cohort study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Isa HM"
+   },
+   {
+    "pmid": "36846273",
+    "year": "2023",
+    "journal": "Qatar Med J",
+    "title": "Clinical Presentation and Outcome of Multiple Rare Earth Magnet Ingestions in Children of Qatar. A Single-Center Experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Khan A"
+   },
+   {
+    "pmid": "36814129",
+    "year": "2023",
+    "journal": "Indian Pediatr",
+    "title": "Clinical Characteristics and Interventions for Ingested Magnetic Foreign Bodies in Children: A Systematic Review and Meta-analysis.",
+    "ptype": [
+     "Meta-Analysis",
+     "Systematic Review",
+     "Journal Article"
+    ],
+    "au": "Xie S"
+   },
+   {
+    "pmid": "35784204",
+    "year": "2022",
+    "journal": "Front Public Health",
+    "title": "Pediatric Multiple High-Powered Magnetic Buckyballs Ingestion-Experience From Six Tertiary Medical Centers.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ding G"
+   },
+   {
+    "pmid": "35657136",
+    "year": "2022",
+    "journal": "BJS Open",
+    "title": "Magnet and button battery ingestion in children: multicentre observational study of management and outcomes.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study",
+     "Observational Study"
+    ],
+    "au": "Paediatric Surgery Trainee Research Network"
+   },
+   {
+    "pmid": "35400217",
+    "year": "2022",
+    "journal": "Pediatr Dev Pathol",
+    "title": "Ingested Foreign Bodies Can Cause Appendicitis and Perforation: A Multi-Institutional Case Series.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Fuller MY"
+   },
+   {
+    "pmid": "34970806",
+    "year": "2022",
+    "journal": "J Paediatr Child Health",
+    "title": "Decade of the dangers of multiple magnet ingestion in children: A retrospective review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chang A"
+   },
+   {
+    "pmid": "34794926",
+    "year": "2022",
+    "journal": "Rev Gastroenterol Mex (Engl Ed)",
+    "title": "Magnet ingestion knows no borders: A threat for Latin American children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Falcon AC"
+   },
+   {
+    "pmid": "34548505",
+    "year": "2021",
+    "journal": "Sci Rep",
+    "title": "Clinical characteristics of magnetic foreign body misingestion in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Huang YK"
+   },
+   {
+    "pmid": "34538505",
+    "year": "2021",
+    "journal": "Rev Gastroenterol Mex (Engl Ed)",
+    "title": "Magnet ingestion knows no borders: A threat for Latin American children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Falcon AC"
+   },
+   {
+    "pmid": "34075452",
+    "year": "2021",
+    "journal": "Pediatr Radiol",
+    "title": "Magnetic resonance imaging findings following button battery ingestion.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Grey NEO"
+   },
+   {
+    "pmid": "33865355",
+    "year": "2021",
+    "journal": "BMC Pediatr",
+    "title": "Retrospective analysis of pediatric patients with multiple rare-earth magnets ingestion: a single-center experience from China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zheng Y"
+   },
+   {
+    "pmid": "33466161",
+    "year": "2021",
+    "journal": "Medicine (Baltimore)",
+    "title": "Management of magnetic foreign body ingestion in children.",
+    "ptype": [
+     "Comparative Study",
+     "Journal Article"
+    ],
+    "au": "Zhang S"
+   },
+   {
+    "pmid": "33388957",
+    "year": "2021",
+    "journal": "Pediatr Surg Int",
+    "title": "Multiple magnetic foreign body ingestion in pediatric patients: a single-center retrospective review.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Huang X"
+   },
+   {
+    "pmid": "32682694",
+    "year": "2020",
+    "journal": "Pediatr Neonatol",
+    "title": "Magnet ingestion by children: A retrospective study in a medical center in Taiwan.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lai HH"
+   },
+   {
+    "pmid": "32111182",
+    "year": "2020",
+    "journal": "BMC Pediatr",
+    "title": "Multicenter investigation of pediatric gastrointestinal tract magnets ingestion in China.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "31698913",
+    "year": "2019",
+    "journal": "Rozhl Chir",
+    "title": "Foreign body ingestion in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lešková J"
+   },
+   {
+    "pmid": "28291530",
+    "year": "2017",
+    "journal": "J Pediatr",
+    "title": "After the Recall: Reexamining Multiple Magnet Ingestion at a Large Pediatric Hospital.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Rosenfield D"
+   },
+   {
+    "pmid": "28868450",
+    "year": "2016",
+    "journal": "GE Port J Gastroenterol",
+    "title": "Endoscopic Management of Foreign Bodies in the Upper Gastrointestinal Tract: An Evidence-Based Review Article.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Magalhães-Costa P"
+   },
+   {
+    "pmid": "26430203",
+    "year": "2015",
+    "journal": "Pediatr Rev",
+    "title": "Ingested and Aspirated Foreign Bodies.",
+    "ptype": [
+     "Journal Article",
+     "Systematic Review"
+    ],
+    "au": "Green SS"
+   },
+   {
+    "pmid": "24836391",
+    "year": "2014",
+    "journal": "J Pediatr",
+    "title": "Magnetic foreign body injuries: a large pediatric hospital experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Strickland M"
+   },
+   {
+    "pmid": "23596362",
+    "year": "2013",
+    "journal": "Perm J",
+    "title": "Ingestion of magnetic toys: report of serious complications requiring surgical intervention and a proposed management algorithm.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tsai J"
+   },
+   {
+    "pmid": "22727803",
+    "year": "2013",
+    "journal": "J Emerg Med",
+    "title": "Prevalence, clinical features and management of pediatric magnetic foreign body ingestions.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tavarez MM"
+   },
+   {
+    "pmid": "11132474",
+    "year": "1999",
+    "journal": "Indian J Pediatr",
+    "title": "Endoscopic management of gastrointestinal foreign bodies in children.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Seo JK"
+   },
+   {
+    "pmid": "9230535",
+    "year": "1997",
+    "journal": "Zhonghua Min Guo Xiao Er Ke Yi Xue Hui Za Zhi",
+    "title": "Therapeutic endoscopy: removal of gastrointestinal foreign bodies in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Seo JK"
+   }
+  ],
+  "G_磁性异物_中国": [
+   {
+    "pmid": "42577709",
+    "year": "2026",
+    "journal": "J Multidiscip Healthc",
+    "title": "Risk Trajectories of Gastrointestinal Foreign Bodies in Children: A Mixed-Methods Study Integrating Dynamic Imaging and Multidisciplinary Decision-Making.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li Z"
+   },
+   {
+    "pmid": "42577497",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Analysis of risk factors associated with surgical treatment for children with foreign body ingestion.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yu HJ"
+   },
+   {
+    "pmid": "42445573",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Clinical features and surgical treatment of magnetic bead ingestion in children: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chen Y"
+   },
+   {
+    "pmid": "42433914",
+    "year": "2026",
+    "journal": "Transl Pediatr",
+    "title": "Clinical characteristics and therapeutic experiences of magnetic foreign body ingestion in children: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yang B"
+   },
+   {
+    "pmid": "42420962",
+    "year": "2026",
+    "journal": "BMC Pediatr",
+    "title": "Algorithm-driven management of pediatric multiple magnetic foreign bodies: a single-center experience of 171 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Dong M"
+   },
+   {
+    "pmid": "42376025",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Imaging characteristics of gastrointestinal foreign bodies in children and analysis of risk factors associated with the severity of complications.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Du H"
+   },
+   {
+    "pmid": "42327912",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "High-Risk foreign body ingestion in children: clinical features and endoscopic outcomes.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Xue N"
+   },
+   {
+    "pmid": "42264127",
+    "year": "2026",
+    "journal": "Environ Pollut",
+    "title": "Climatic and industrial controls on heavy metal pollution in urban street dust: Insights from magnetic signatures in two megacities.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wang G"
+   },
+   {
+    "pmid": "41883687",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Clinical experiences of 109 children with foreign body ingestion: a retrospective study from Kunming, China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li Z"
+   },
+   {
+    "pmid": "41239316",
+    "year": "2025",
+    "journal": "BMC Pediatr",
+    "title": "Prediction of complications from pediatric multiple magnet ingestion: development and validation of radiologic and clinical-radiologic nomograms in a large retrospective study.",
+    "ptype": [
+     "Journal Article",
+     "Validation Study"
+    ],
+    "au": "Lai X"
+   },
+   {
+    "pmid": "40242406",
+    "year": "2025",
+    "journal": "J Am Coll Emerg Physicians Open",
+    "title": "Magnetic Bead Ingestion in a Pediatric Patient: Imaging and Management.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Wan Q"
+   },
+   {
+    "pmid": "39761080",
+    "year": "2025",
+    "journal": "J Laparoendosc Adv Surg Tech A",
+    "title": "Individualized Treatment of Multiple Magnetic Foreign Body Ingestion in Children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chen Y"
+   },
+   {
+    "pmid": "39489680",
+    "year": "2025",
+    "journal": "J Pediatr Surg",
+    "title": "Magnets in Paediatric Surgery.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Muensterer OJ"
+   },
+   {
+    "pmid": "39287501",
+    "year": "2025",
+    "journal": "Am J Gastroenterol",
+    "title": "Development and Validation of a Clinical Nomogram for Predicting Complications From Pediatric Multiple Magnet Ingestion: A Large Retrospective Study.",
+    "ptype": [
+     "Journal Article",
+     "Validation Study"
+    ],
+    "au": "Luo Y"
+   },
+   {
+    "pmid": "38654816",
+    "year": "2024",
+    "journal": "Qatar Med J",
+    "title": "Surgical treatment of multiple magnet ingestion by children: A single-center experience from China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhang C"
+   },
+   {
+    "pmid": "38172693",
+    "year": "2024",
+    "journal": "BMC Pediatr",
+    "title": "Accidental ingestion of multiple magnetic beads by children and their impact on the gastrointestinal tract: a single-center study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li XL"
+   },
+   {
+    "pmid": "37355569",
+    "year": "2023",
+    "journal": "BMC Pediatr",
+    "title": "Clinical predictors of surgical intervention for gastrointestinal magnetic foreign bodies in children.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Zhang RY"
+   },
+   {
+    "pmid": "36814129",
+    "year": "2023",
+    "journal": "Indian Pediatr",
+    "title": "Clinical Characteristics and Interventions for Ingested Magnetic Foreign Bodies in Children: A Systematic Review and Meta-analysis.",
+    "ptype": [
+     "Meta-Analysis",
+     "Systematic Review",
+     "Journal Article"
+    ],
+    "au": "Xie S"
+   },
+   {
+    "pmid": "36714638",
+    "year": "2022",
+    "journal": "Front Pediatr",
+    "title": "Application of high-frequency ultrasound in the diagnosis of gastrointestinal magnet ingestion in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Xin Y"
+   },
+   {
+    "pmid": "36205322",
+    "year": "2023",
+    "journal": "Rev Esp Enferm Dig",
+    "title": "A \"push-and-pull\" trick for endoscopic removal of buckyballs impacted in the esophagus and gastric fundus.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ouyang H"
+   },
+   {
+    "pmid": "35879696",
+    "year": "2022",
+    "journal": "BMC Pediatr",
+    "title": "Management of multiple magnetic foreign body ingestion in pediatric patients.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Jin Y"
+   },
+   {
+    "pmid": "35784204",
+    "year": "2022",
+    "journal": "Front Public Health",
+    "title": "Pediatric Multiple High-Powered Magnetic Buckyballs Ingestion-Experience From Six Tertiary Medical Centers.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ding G"
+   },
+   {
+    "pmid": "35341853",
+    "year": "2022",
+    "journal": "Sci Total Environ",
+    "title": "Application of magnetic susceptibility and heavy metal bioaccessibility to assessments of urban sandstorm contamination and health risks: Case studies from Dunhuang and Lanzhou, Northwest China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ma X"
+   },
+   {
+    "pmid": "34548505",
+    "year": "2021",
+    "journal": "Sci Rep",
+    "title": "Clinical characteristics of magnetic foreign body misingestion in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Huang YK"
+   },
+   {
+    "pmid": "33865355",
+    "year": "2021",
+    "journal": "BMC Pediatr",
+    "title": "Retrospective analysis of pediatric patients with multiple rare-earth magnets ingestion: a single-center experience from China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zheng Y"
+   },
+   {
+    "pmid": "33713066",
+    "year": "2021",
+    "journal": "Indian Pediatr",
+    "title": "Digestive Tract Injuries Caused by Ingested Foreign Bodies Containing Magnets.",
+    "ptype": [
+     "Letter"
+    ],
+    "au": "Su ZL"
+   },
+   {
+    "pmid": "33466161",
+    "year": "2021",
+    "journal": "Medicine (Baltimore)",
+    "title": "Management of magnetic foreign body ingestion in children.",
+    "ptype": [
+     "Comparative Study",
+     "Journal Article"
+    ],
+    "au": "Zhang S"
+   },
+   {
+    "pmid": "33388957",
+    "year": "2021",
+    "journal": "Pediatr Surg Int",
+    "title": "Multiple magnetic foreign body ingestion in pediatric patients: a single-center retrospective review.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Huang X"
+   },
+   {
+    "pmid": "33361046",
+    "year": "2020",
+    "journal": "Turk J Gastroenterol",
+    "title": "Clinical report and analysis of 24 cases of multiple magnetic beads foreign body in gastrointestinal tract of children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li XL"
+   },
+   {
+    "pmid": "33344597",
+    "year": "2020",
+    "journal": "World J Clin Cases",
+    "title": "Surgical treatment of multiple magnet ingestion in children: A single-center study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Cai DT"
+   },
+   {
+    "pmid": "32682694",
+    "year": "2020",
+    "journal": "Pediatr Neonatol",
+    "title": "Magnet ingestion by children: A retrospective study in a medical center in Taiwan.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lai HH"
+   },
+   {
+    "pmid": "32111182",
+    "year": "2020",
+    "journal": "BMC Pediatr",
+    "title": "Multicenter investigation of pediatric gastrointestinal tract magnets ingestion in China.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "28930851",
+    "year": "2017",
+    "journal": "Medicine (Baltimore)",
+    "title": "An analysis of foreign body ingestion treatment below the pylorus in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wu W"
+   },
+   {
+    "pmid": "27324576",
+    "year": "2016",
+    "journal": "Sci Rep",
+    "title": "Melamine Impairs Renal and Vascular Function in Rats.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Tian XY"
+   },
+   {
+    "pmid": "22886320",
+    "year": "2012",
+    "journal": "Front Med",
+    "title": "Gastrointestinal damage caused by swallowing multiple magnets.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ],
+    "au": "Liu S"
+   },
+   {
+    "pmid": "22030770",
+    "year": "2011",
+    "journal": "Zhonghua Wei Chang Wai Ke Za Zhi",
+    "title": "[Systematic review of gastrointestinal injury caused by magnetic foreign body ingestions in children and adolescence].",
+    "ptype": [
+     "Journal Article",
+     "Research Support, U.S. Gov't, Non-P.H.S.",
+     "Systematic Review"
+    ],
+    "au": "Liu SQ"
+   },
+   {
+    "pmid": "20395092",
+    "year": "2011",
+    "journal": "Eur J Radiol",
+    "title": "MRI findings in 6 cases of children by inadvertent ingestion of diphenoxylate-atropine.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Xiao L"
+   }
+  ],
+  "H_磁性异物_流行病学趋势": [
+   {
+    "pmid": "42714639",
+    "year": "2026",
+    "journal": "Pediatr Surg Int",
+    "title": "Clinical characteristics and temporal trends of pediatric gastrointestinal foreign body ingestion: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Takeuchi Y"
+   },
+   {
+    "pmid": "42658005",
+    "year": "2026",
+    "journal": "Acta Paediatr",
+    "title": "Surgical Complications From Foreign Body Ingestion in Paediatric Age: An Italian Retrospective Multicentre Study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Salatto A"
+   },
+   {
+    "pmid": "42580657",
+    "year": "2026",
+    "journal": "J Pediatr Surg",
+    "title": "Parent and caregiver awareness of the dangers of magnet ingestion.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Nezhentsev A"
+   },
+   {
+    "pmid": "42514240",
+    "year": "2026",
+    "journal": "Life (Basel)",
+    "title": "Foreign Body Ingestion in Children: From a Harmless Incident to a Life-Threatening Emergency.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Mihailov MD"
+   },
+   {
+    "pmid": "42481101",
+    "year": "2026",
+    "journal": "Adv Pediatr",
+    "title": "Management of Foreign Bodies: Beads, Coins, and Magnets.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Naik-Mathuria B"
+   },
+   {
+    "pmid": "42433914",
+    "year": "2026",
+    "journal": "Transl Pediatr",
+    "title": "Clinical characteristics and therapeutic experiences of magnetic foreign body ingestion in children: a single-center retrospective study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yang B"
+   },
+   {
+    "pmid": "42007737",
+    "year": "2026",
+    "journal": "Acta Paediatr",
+    "title": "Ethnic Differences in Foreign Body Ingestion: Insights Into Social and Epidemiological Aspects.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Abboud N"
+   },
+   {
+    "pmid": "41883687",
+    "year": "2026",
+    "journal": "Front Pediatr",
+    "title": "Clinical experiences of 109 children with foreign body ingestion: a retrospective study from Kunming, China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li Z"
+   },
+   {
+    "pmid": "41592955",
+    "year": "2026",
+    "journal": "Inj Prev",
+    "title": "Socioeconomic disparities in paediatric high-powered magnet exposures epidemiology and outcomes.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Johns A"
+   },
+   {
+    "pmid": "41362525",
+    "year": "2025",
+    "journal": "Cureus",
+    "title": "Beyond the Gut Feeling: A Retrospective Analysis of Adult Foreign Body Ingestion, Associated Risk Factors, and Treatment Outcomes.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Elkhalil I"
+   },
+   {
+    "pmid": "41327985",
+    "year": "2025",
+    "journal": "Turk J Pediatr",
+    "title": "The danger of magnet attraction: an 11-year cohort of pediatric intestinal complications due to magnet ingestion.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Varlıklı O"
+   },
+   {
+    "pmid": "41153526",
+    "year": "2025",
+    "journal": "Children (Basel)",
+    "title": "Risk Factors Associated with Endoscopic Intervention in Pediatric Patients Presenting with Foreign Body Ingestion to the Emergency Department.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Byun YH"
+   },
+   {
+    "pmid": "40943994",
+    "year": "2025",
+    "journal": "J Clin Med",
+    "title": "Entero-Enteric Fistula Following Multiple Magnet Ingestion in Children: A Systematic Review.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Kelaidi N"
+   },
+   {
+    "pmid": "40831810",
+    "year": "2025",
+    "journal": "Cureus",
+    "title": "A Retrospective Study of Foreign Body Ingestions and Outcomes Among the Pediatric Age Group in a Tertiary Care Hospital in Dubai, United Arab Emirates.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Sarmini D"
+   },
+   {
+    "pmid": "40814587",
+    "year": "2025",
+    "journal": "JPGN Rep",
+    "title": "Global insights on the diagnosis, management, and prevention of pediatric ingestions: A report from the FISPGHAN expert panel.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Manfredi MA"
+   },
+   {
+    "pmid": "40393707",
+    "year": "2025",
+    "journal": "Inj Prev",
+    "title": "Paediatric magnet ingestion persists worldwide despite increasing regulatory policies.",
+    "ptype": [
+     "Journal Article",
+     "Systematic Review"
+    ],
+    "au": "Khader J"
+   },
+   {
+    "pmid": "40383554",
+    "year": "2025",
+    "journal": "Arch Dis Child",
+    "title": "Magnet ingestion in children in the United Kingdom: a national prospective observational surveillance study.",
+    "ptype": [
+     "Journal Article",
+     "Observational Study",
+     "Multicenter Study"
+    ],
+    "au": "Neville JJ"
+   },
+   {
+    "pmid": "39761080",
+    "year": "2025",
+    "journal": "J Laparoendosc Adv Surg Tech A",
+    "title": "Individualized Treatment of Multiple Magnetic Foreign Body Ingestion in Children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chen Y"
+   },
+   {
+    "pmid": "39489680",
+    "year": "2025",
+    "journal": "J Pediatr Surg",
+    "title": "Magnets in Paediatric Surgery.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Muensterer OJ"
+   },
+   {
+    "pmid": "39177065",
+    "year": "2025",
+    "journal": "Laryngoscope",
+    "title": "Consumer Trends Reflected in the Contents of the Pediatric Esophagus: A 20-Year Review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Xiao JB"
+   },
+   {
+    "pmid": "38869345",
+    "year": "2024",
+    "journal": "Clin Pract Cases Emerg Med",
+    "title": "Child with Closed Head Injury and Persistent Vomiting.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Khan A"
+   },
+   {
+    "pmid": "38654816",
+    "year": "2024",
+    "journal": "Qatar Med J",
+    "title": "Surgical treatment of multiple magnet ingestion by children: A single-center experience from China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhang C"
+   },
+   {
+    "pmid": "38374556",
+    "year": "2024",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Management patterns of multiple magnet ingestion reported to New Jersey Poison Information and Education System.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Nguyen TT"
+   },
+   {
+    "pmid": "37985250",
+    "year": "2024",
+    "journal": "Dig Liver Dis",
+    "title": "Magnetic foreign body ingestion in pediatric age.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Quitadamo P"
+   },
+   {
+    "pmid": "37641921",
+    "year": "2024",
+    "journal": "Acta Paediatr",
+    "title": "Managing magnets: An audit of introduction of the Royal College of Emergency Medicine Best Practice Guideline.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "McLeish S"
+   },
+   {
+    "pmid": "37575898",
+    "year": "2023",
+    "journal": "Transl Pediatr",
+    "title": "Foreign body ingestion trends in children in the Daegu-Kyungpook Province, Korea before and during the COVID-19 period: a repeated cross-sectional study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Hong SJ"
+   },
+   {
+    "pmid": "37083691",
+    "year": "2024",
+    "journal": "Pediatr Emerg Care",
+    "title": "Evaluating Multiple Magnet Ingestion at 2 Large Canadian Pediatric Hospitals After Reintroduction to the US Marketplace.",
+    "ptype": [
+     "Review",
+     "Journal Article"
+    ],
+    "au": "Grandjean-Blanchet C"
+   },
+   {
+    "pmid": "36947000",
+    "year": "2023",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Pediatric Magnet Ingestion, Diagnosis, Management, and Prevention: A European Society for Paediatric Gastroenterology Hepatology and Nutrition (ESPGHAN) Position Paper.",
+    "ptype": [
+     "Journal Article",
+     "Review",
+     "Consensus Statement"
+    ],
+    "au": "Nugud AA"
+   },
+   {
+    "pmid": "36714638",
+    "year": "2022",
+    "journal": "Front Pediatr",
+    "title": "Application of high-frequency ultrasound in the diagnosis of gastrointestinal magnet ingestion in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Xin Y"
+   },
+   {
+    "pmid": "36228258",
+    "year": "2022",
+    "journal": "Rev Assoc Med Bras (1992)",
+    "title": "Protocol of care for foreign-body ingestion in children: a qualitative study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Silva Júnior DSD"
+   },
+   {
+    "pmid": "36115782",
+    "year": "2022",
+    "journal": "An Pediatr (Engl Ed)",
+    "title": "Multicentre study of magnet ingestion in Spanish paediatric emergency departments.",
+    "ptype": [
+     "Multicenter Study",
+     "Observational Study",
+     "Journal Article"
+    ],
+    "au": "Arbeloa Miranda A"
+   },
+   {
+    "pmid": "35984456",
+    "year": "2022",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "The Impact of the COVID-19 Pandemic on Foreign Body Ingestion Trends in Children: A Comparison of the Pre-Pandemic Period to 2020.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Geibel E"
+   },
+   {
+    "pmid": "35653435",
+    "year": "2022",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Management of Magnet Ingestions at a Large Tertiary Care Children's Hospital.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "au": "Shaul E"
+   },
+   {
+    "pmid": "35112127",
+    "year": "2022",
+    "journal": "Pediatrics",
+    "title": "High-Powered Magnet Exposures in Children: A Multi-Center Cohort Study.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Middelberg LK"
+   },
+   {
+    "pmid": "34970806",
+    "year": "2022",
+    "journal": "J Paediatr Child Health",
+    "title": "Decade of the dangers of multiple magnet ingestion in children: A retrospective review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chang A"
+   },
+   {
+    "pmid": "34823462",
+    "year": "2022",
+    "journal": "CNS Neurol Disord Drug Targets",
+    "title": "An Overview of Acute Flaccid Myelitis.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Setia A"
+   },
+   {
+    "pmid": "34794926",
+    "year": "2022",
+    "journal": "Rev Gastroenterol Mex (Engl Ed)",
+    "title": "Magnet ingestion knows no borders: A threat for Latin American children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Falcon AC"
+   },
+   {
+    "pmid": "34724360",
+    "year": "2021",
+    "journal": "Obesity (Silver Spring)",
+    "title": "Brain responses to glucose ingestion are greater in children than adults and are associated with overweight and obesity.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Ge BB"
+   },
+   {
+    "pmid": "34544782",
+    "year": "2022",
+    "journal": "Emerg Med J",
+    "title": "Ball magnet ingestion in children: a stronger and more dangerous attraction?",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Price J"
+   },
+   {
+    "pmid": "34538505",
+    "year": "2021",
+    "journal": "Rev Gastroenterol Mex (Engl Ed)",
+    "title": "Magnet ingestion knows no borders: A threat for Latin American children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Falcon AC"
+   },
+   {
+    "pmid": "34422734",
+    "year": "2021",
+    "journal": "Front Pediatr",
+    "title": "Magnet Ingestion in Children Management Guidelines and Prevention.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Altokhais T"
+   },
+   {
+    "pmid": "33936796",
+    "year": "2021",
+    "journal": "SA J Radiol",
+    "title": "Clinical presentation, diagnosis and management of aerodigestive tract foreign bodies in the paediatric population: Part 2.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Mathew RP"
+   },
+   {
+    "pmid": "33839906",
+    "year": "2021",
+    "journal": "Pediatr Surg Int",
+    "title": "Magnet ingestion in children and its implications: tertiary centre experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Mostafa MS"
+   },
+   {
+    "pmid": "33738669",
+    "year": "2021",
+    "journal": "Brain Imaging Behav",
+    "title": "The role of maternal BMI on brain food cue reactivity in children: a preliminary study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Luo S"
+   },
+   {
+    "pmid": "33516676",
+    "year": "2021",
+    "journal": "J Pediatr",
+    "title": "Magnet Injuries in Children: An Analysis of the National Poison Data System from 2008 to 2019.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Middelberg LK"
+   },
+   {
+    "pmid": "33231653",
+    "year": "2020",
+    "journal": "JAMA",
+    "title": "Pediatric Magnet Ingestions After Federal Rule Changes, 2009-2019.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Flaherty MR"
+   },
+   {
+    "pmid": "32969961",
+    "year": "2020",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Magnet Ingestions in Children Presenting to Emergency Departments in the United States 2009-2019: A Problem in Flux.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Reeves PT"
+   },
+   {
+    "pmid": "32568410",
+    "year": "2021",
+    "journal": "Acta Paediatr",
+    "title": "A nationwide questionnaire survey on accidental magnet ingestion in children in Japan.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Miyamoto R"
+   },
+   {
+    "pmid": "32317194",
+    "year": "2020",
+    "journal": "J Emerg Med",
+    "title": "Case Discussions and Radiographic Illustration of Magnet-Related Injuries in Children.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Strickland M"
+   },
+   {
+    "pmid": "32111182",
+    "year": "2020",
+    "journal": "BMC Pediatr",
+    "title": "Multicenter investigation of pediatric gastrointestinal tract magnets ingestion in China.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "30188872",
+    "year": "2018",
+    "journal": "Curr Opin Pediatr",
+    "title": "Button battery and magnet ingestions in the pediatric patient.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Bolton SM"
+   },
+   {
+    "pmid": "29462339",
+    "year": "2018",
+    "journal": "J Pediatr Psychol",
+    "title": "A Pilot Study of Neural Correlates of Loss of Control Eating in Children With Overweight/Obesity: Probing Intermittent Access to Food as a Means of Eliciting Disinhibited Eating.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, N.I.H., Extramural"
+    ],
+    "au": "Goldschmidt AB"
+   },
+   {
+    "pmid": "29135818",
+    "year": "2018",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Trends of Magnet Ingestion in Children, an Ironic Attraction.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Reeves PT"
+   },
+   {
+    "pmid": "28665528",
+    "year": "2017",
+    "journal": "J Paediatr Child Health",
+    "title": "Trauma hazards in children: An update for the busy clinician.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Holland AJ"
+   },
+   {
+    "pmid": "28502435",
+    "year": "2017",
+    "journal": "Pediatr Clin North Am",
+    "title": "Caustic Ingestions and Foreign Bodies Ingestions in Pediatric Patients.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Kurowski JA"
+   },
+   {
+    "pmid": "28291530",
+    "year": "2017",
+    "journal": "J Pediatr",
+    "title": "After the Recall: Reexamining Multiple Magnet Ingestion at a Large Pediatric Hospital.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Rosenfield D"
+   },
+   {
+    "pmid": "28868450",
+    "year": "2016",
+    "journal": "GE Port J Gastroenterol",
+    "title": "Endoscopic Management of Foreign Bodies in the Upper Gastrointestinal Tract: An Evidence-Based Review Article.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Magalhães-Costa P"
+   },
+   {
+    "pmid": "26430203",
+    "year": "2015",
+    "journal": "Pediatr Rev",
+    "title": "Ingested and Aspirated Foreign Bodies.",
+    "ptype": [
+     "Journal Article",
+     "Systematic Review"
+    ],
+    "au": "Green SS"
+   },
+   {
+    "pmid": "30202341",
+    "year": "2017",
+    "journal": "Am J Lifestyle Med",
+    "title": "Rare-Earth Magnet Ingestion-Related Injuries in the Pediatric Population: A Review.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Hodges NL"
+   },
+   {
+    "pmid": "25959833",
+    "year": "2015",
+    "journal": "J Surg Res",
+    "title": "Surgical management and morbidity of pediatric magnet ingestions.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Waters AM"
+   },
+   {
+    "pmid": "24836391",
+    "year": "2014",
+    "journal": "J Pediatr",
+    "title": "Magnetic foreign body injuries: a large pediatric hospital experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Strickland M"
+   },
+   {
+    "pmid": "24791640",
+    "year": "2014",
+    "journal": "Am J Surg",
+    "title": "Pediatric magnet ingestions: the dark side of the force.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Brown JC"
+   },
+   {
+    "pmid": "24168883",
+    "year": "2013",
+    "journal": "Pediatr Emerg Care",
+    "title": "Too attractive: the growing problem of magnet ingestions in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Brown JC"
+   },
+   {
+    "pmid": "24137035",
+    "year": "2013",
+    "journal": "Clin Pediatr (Phila)",
+    "title": "Rare-earth magnet ingestion-related injuries among children, 2000-2012.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "De Roo AC"
+   },
+   {
+    "pmid": "24093905",
+    "year": "2013",
+    "journal": "Pediatr Clin North Am",
+    "title": "Updates in pediatric gastrointestinal foreign bodies.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Wright CC"
+   },
+   {
+    "pmid": "23961545",
+    "year": "2013",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Magnet-related injury rates in children: a single hospital experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Agbo C"
+   },
+   {
+    "pmid": "23927958",
+    "year": "2013",
+    "journal": "Ann Emerg Med",
+    "title": "Increase in pediatric magnet-related foreign bodies requiring emergency care.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Silverman JA"
+   },
+   {
+    "pmid": "23575300",
+    "year": "2013",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Magnet ingestions in children presenting to US emergency departments, 2002-2011.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Abbas MI"
+   },
+   {
+    "pmid": "22030770",
+    "year": "2011",
+    "journal": "Zhonghua Wei Chang Wai Ke Za Zhi",
+    "title": "[Systematic review of gastrointestinal injury caused by magnetic foreign body ingestions in children and adolescence].",
+    "ptype": [
+     "Journal Article",
+     "Research Support, U.S. Gov't, Non-P.H.S.",
+     "Systematic Review"
+    ],
+    "au": "Liu SQ"
+   },
+   {
+    "pmid": "15913481",
+    "year": "2005",
+    "journal": "Curr Gastroenterol Rep",
+    "title": "Pediatric foreign bodies and their management.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Kay M"
+   },
+   {
+    "pmid": "2054408",
+    "year": "1991",
+    "journal": "Epidemiology",
+    "title": "An alternate hypothesis for the association between electrical wiring configurations and cancer.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Kavet R"
+   }
+  ],
+  "I_儿童胃十二指肠穿孔_中国作者": [
+   {
+    "pmid": "42351018",
+    "year": "2026",
+    "journal": "BMC Pediatr",
+    "title": "Multidisciplinary approach for treatment of duodenal perforation complicated with gastrointestinal hemorrhage in pediatric patient and relevant literature review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhu R"
+   },
+   {
+    "pmid": "42097531",
+    "year": "2026",
+    "journal": "J Pediatr Surg",
+    "title": "Letter to the Editor Comment on: Clinical characteristics and mortality prediction in neonatal gastric perforation: Insights from a regional multicenter retrospective cohort study.",
+    "ptype": [
+     "Letter"
+    ],
+    "au": "Li J"
+   },
+   {
+    "pmid": "41974396",
+    "year": "2026",
+    "journal": "J Pediatr Surg",
+    "title": "Clinical characteristics and mortality prediction in neonatal gastric perforation: Insights from a regional multicenter retrospective cohort study.",
+    "ptype": [
+     "Comparative Study",
+     "Journal Article",
+     "Multicenter Study"
+    ],
+    "au": "Fang Y"
+   },
+   {
+    "pmid": "39989137",
+    "year": "2025",
+    "journal": "Nurs Crit Care",
+    "title": "Improving the proper placement of gastric tube in the neonatal intensive care unit: A quality improvement project in China.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Huang W"
+   },
+   {
+    "pmid": "39657318",
+    "year": "2024",
+    "journal": "J Trop Pediatr",
+    "title": "Prognostic factors of preterm neonates with gastrointestinal perforation: a retrospective cohort study from a tertiary neonatal center's 13-year experience in China.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Yuan P"
+   },
+   {
+    "pmid": "40626297",
+    "year": "2025",
+    "journal": "Pediatr Discov",
+    "title": "Effect of early postoperative enteral nutrition on the short-term prognosis in neonatal gastric perforation.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zhu T"
+   },
+   {
+    "pmid": "37750300",
+    "year": "2024",
+    "journal": "Clin Pediatr (Phila)",
+    "title": "Visualization of Risk Factors and Predictive Models for Early Death of Neonatal Gastric Perforation.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Mengying C"
+   },
+   {
+    "pmid": "36997985",
+    "year": "2023",
+    "journal": "BMC Pediatr",
+    "title": "Experience in diagnosis and treatment of duodenal ulcer perforation in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Shen Q"
+   },
+   {
+    "pmid": "34878346",
+    "year": "2021",
+    "journal": "Ann Med",
+    "title": "Clinical characteristics and associating risk factors of gastrointestinal perforation in children with IgA vasculitis.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Guo Q"
+   },
+   {
+    "pmid": "34055689",
+    "year": "2021",
+    "journal": "Front Pediatr",
+    "title": "Risk Factors for Mortality in Neonatal Gastric Perforation: A Retrospective Cohort Study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Huang Y"
+   },
+   {
+    "pmid": "30992193",
+    "year": "2019",
+    "journal": "Pediatr Neonatol",
+    "title": "Pediatric gastric perforation beyond neonatal period: 8-year experience with 20 patients.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wang K"
+   },
+   {
+    "pmid": "30448888",
+    "year": "2019",
+    "journal": "Pediatr Surg Int",
+    "title": "Gastroduodenal perforation in the pediatric population: a retrospective analysis of 20 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yan X"
+   },
+   {
+    "pmid": "29392435",
+    "year": "2018",
+    "journal": "World J Surg",
+    "title": "Neonatal Gastric Perforation: Case Series and Literature Review.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't",
+     "Review"
+    ],
+    "au": "Yang T"
+   },
+   {
+    "pmid": "26965761",
+    "year": "2016",
+    "journal": "Asia Pac J Clin Nutr",
+    "title": "Early enteral nutrition in neonates with partial gastrectomy: a multi-center study.",
+    "ptype": [
+     "Journal Article",
+     "Multicenter Study",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Jiang W"
+   },
+   {
+    "pmid": "26211770",
+    "year": "2015",
+    "journal": "Zhonghua Wei Chang Wai Ke Za Zhi",
+    "title": "[Application of enteral nutrition in pediatric surgery].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Li H"
+   },
+   {
+    "pmid": "24910758",
+    "year": "2013",
+    "journal": "Iran J Pediatr",
+    "title": "Gastric perforation associated with congenital diaphragmatic hernia in a neonate.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Jiang Y"
+   },
+   {
+    "pmid": "22000431",
+    "year": "2011",
+    "journal": "Zhongguo Dang Dai Er Ke Za Zhi",
+    "title": "[Expression of c-kit and Cx43 in neonates with spontaneous gastric perforation].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Xia LN"
+   },
+   {
+    "pmid": "21176490",
+    "year": "2010",
+    "journal": "Zhonghua Er Ke Za Zhi",
+    "title": "[Clinicopathological characteristics and potential etiologies of neonatal spontaneous gastric perforation].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Wang ZQ"
+   },
+   {
+    "pmid": "16615288",
+    "year": "2006",
+    "journal": "Chin Med Sci J",
+    "title": "Diagnosis, treatment, and research of etiology of spontaneous neonatal gastric perforation.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Niu ZB"
+   }
+  ],
+  "D_儿童溃疡穿孔": [
+   {
+    "pmid": "41367508",
+    "year": "2025",
+    "journal": "Transl Pediatr",
+    "title": "Prediction of duodenal ulcers in children with Helicobacter pylori infection.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zheng S"
+   },
+   {
+    "pmid": "40800653",
+    "year": "2025",
+    "journal": "J Surg Case Rep",
+    "title": "A novel combined laparoscopic-endoscopic overstitch technique for pediatric gastric ulcer perforation: an innovative approach to repair of hollow viscus perforations.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Huang-Pacheco A"
+   },
+   {
+    "pmid": "40611020",
+    "year": "2025",
+    "journal": "BMC Surg",
+    "title": "Comparison of trans-umbilical single-port laparoscopic surgery and laparotomy for repair of perforated peptic ulcer in pediatric patients: a retrospective study.",
+    "ptype": [
+     "Journal Article",
+     "Comparative Study"
+    ],
+    "au": "Jiang JH"
+   },
+   {
+    "pmid": "40386338",
+    "year": "2025",
+    "journal": "JPGN Rep",
+    "title": "A clear approach: Hemostatic gel as a novel adjunct for pediatric upper gastrointestinal bleeding.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Plott N"
+   },
+   {
+    "pmid": "40335985",
+    "year": "2025",
+    "journal": "BMC Pediatr",
+    "title": "Perforated peptic ulcers in children: a systematic review.",
+    "ptype": [
+     "Journal Article",
+     "Systematic Review"
+    ],
+    "au": "Vidović S"
+   },
+   {
+    "pmid": "38644127",
+    "year": "2024",
+    "journal": "J Formos Med Assoc",
+    "title": "The trends of pediatric duodenal ulcer and predictors of recurrence.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yeh PJ"
+   },
+   {
+    "pmid": "37886238",
+    "year": "2023",
+    "journal": "Front Pediatr",
+    "title": "Experience of management of pediatric upper gastrointestinal perforations: a series of 30 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wang M"
+   },
+   {
+    "pmid": "37416425",
+    "year": "2023",
+    "journal": "J Environ Public Health",
+    "title": "Retracted: Role of Radiology and Laparoscopy in Childhood Peptic Ulcer Perforation.",
+    "ptype": [
+     "Retraction Notice"
+    ],
+    "au": "Environmental And Public Health JO"
+   },
+   {
+    "pmid": "36997985",
+    "year": "2023",
+    "journal": "BMC Pediatr",
+    "title": "Experience in diagnosis and treatment of duodenal ulcer perforation in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Shen Q"
+   },
+   {
+    "pmid": "35910757",
+    "year": "2022",
+    "journal": "J Environ Public Health",
+    "title": "Role of Radiology and Laparoscopy in Childhood Peptic Ulcer Perforation.",
+    "ptype": [
+     "Journal Article",
+     "Retracted Publication"
+    ],
+    "au": "Demir M"
+   },
+   {
+    "pmid": "34008051",
+    "year": "2021",
+    "journal": "Indian J Pediatr",
+    "title": "Gastropleural Fistula in a Child with Acute Lymphoblastic Leukemia Due to Perforated Gastric Ulcer.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Khera S"
+   },
+   {
+    "pmid": "30448888",
+    "year": "2019",
+    "journal": "Pediatr Surg Int",
+    "title": "Gastroduodenal perforation in the pediatric population: a retrospective analysis of 20 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yan X"
+   },
+   {
+    "pmid": "29178963",
+    "year": "2017",
+    "journal": "Crit Care",
+    "title": "Chloral hydrate enteral infusion for sedation in ventilated children: the CHOSEN pilot study.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Joffe AR"
+   },
+   {
+    "pmid": "29033302",
+    "year": "2018",
+    "journal": "J Glob Antimicrob Resist",
+    "title": "Antimicrobial susceptibility of Helicobacter pylori strains isolated from children in Israel.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Pastukh N"
+   },
+   {
+    "pmid": "27686129",
+    "year": "2016",
+    "journal": "Am J Case Rep",
+    "title": "Spontaneous Gastric Perforation in Two Adolescents.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Akalonu A"
+   },
+   {
+    "pmid": "27454069",
+    "year": "2017",
+    "journal": "Eur J Pediatr Surg",
+    "title": "Laparoscopic Repair for Perforated Peptic Ulcer in Children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Reusens H"
+   },
+   {
+    "pmid": "26989751",
+    "year": "2016",
+    "journal": "Open Forum Infect Dis",
+    "title": "Gastroduodenal Perforation and Ulcer Associated With Rotavirus and Norovirus Infections in Japanese Children: A Case Report and Comprehensive Literature Review.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ueda N"
+   },
+   {
+    "pmid": "26386878",
+    "year": "2015",
+    "journal": "J Pediatr Surg",
+    "title": "Laparoscopic versus open operation for perforated peptic ulcer in pediatric patients: A 10-year experience.",
+    "ptype": [
+     "Comparative Study",
+     "Evaluation Study",
+     "Journal Article"
+    ],
+    "au": "Wong CW"
+   },
+   {
+    "pmid": "24948965",
+    "year": "2014",
+    "journal": "Pak J Med Sci",
+    "title": "Simple patch closure for perforated peptic ulcer in children followed by helicobacter pylori eradication.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Yildiz T"
+   },
+   {
+    "pmid": "22450248",
+    "year": "2012",
+    "journal": "Curr Opin Pediatr",
+    "title": "Beyond appendicitis: evaluation and surgical treatment of pediatric acute abdominal pain.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Saito JM"
+   },
+   {
+    "pmid": "19289311",
+    "year": "2009",
+    "journal": "Kaohsiung J Med Sci",
+    "title": "Children presenting at the emergency department with right lower quadrant pain.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lin CH"
+   },
+   {
+    "pmid": "19231539",
+    "year": "2009",
+    "journal": "J Pediatr Surg",
+    "title": "Diagnosis, incidence, and outcomes of suspected typhlitis in oncology patients--experience in a tertiary pediatric surgical center in the United Kingdom.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Mullassery D"
+   },
+   {
+    "pmid": "17592367",
+    "year": "2007",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Perforated peptic ulcer in children: a 20-year experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Hua MC"
+   },
+   {
+    "pmid": "17171378",
+    "year": "2007",
+    "journal": "Pediatr Surg Int",
+    "title": "Meckel's diverticular complications in children: is laparoscopy the order of the day?",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Sai Prasad TR"
+   },
+   {
+    "pmid": "17161209",
+    "year": "2006",
+    "journal": "J Pediatr Surg",
+    "title": "Complications of peptic ulcer disease in children and adolescents: minimally invasive treatments offer feasible surgical options.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Wong BP"
+   },
+   {
+    "pmid": "16156406",
+    "year": "2005",
+    "journal": "Tunis Med",
+    "title": "[Indications and outcomes of surgical treatment of gastro-duodenal ulcer in child and adolescent. About 45 cases].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Jalel C"
+   },
+   {
+    "pmid": "16108750",
+    "year": "2005",
+    "journal": "J Laparoendosc Adv Surg Tech A",
+    "title": "Twelve years of minimally invasive surgery in children and adolescents: a single center experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Karplus G"
+   },
+   {
+    "pmid": "15937829",
+    "year": "2005",
+    "journal": "J Pediatr Surg",
+    "title": "Surgery for peptic ulcer disease in children in the post-histamine2-blocker era.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Edwards MJ"
+   },
+   {
+    "pmid": "10605523",
+    "year": "1999",
+    "journal": "Ann Trop Paediatr",
+    "title": "Peptic ulcer disease in childhood in Zaria, Nigeria.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Ameh EA"
+   },
+   {
+    "pmid": "10483184",
+    "year": "1999",
+    "journal": "Klin Khir",
+    "title": "[Surgical diseases of the stomach in children].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Kononuchenko VP"
+   },
+   {
+    "pmid": "9396537",
+    "year": "1997",
+    "journal": "J Pediatr Surg",
+    "title": "Long-term follow-up of childhood duodenal ulcers.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Chan KL"
+   },
+   {
+    "pmid": "9074277",
+    "year": "1996",
+    "journal": "Zhonghua Min Guo Xiao Er Ke Yi Xue Hui Za Zhi",
+    "title": "Helicobacter pylori infection and duodenal ulcer in children and adolescents.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tsai CJ"
+   },
+   {
+    "pmid": "8783092",
+    "year": "1996",
+    "journal": "J Pediatr Surg",
+    "title": "A 45-year experience with surgical treatment of peptic ulcer disease in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Azarow K"
+   },
+   {
+    "pmid": "7674616",
+    "year": "1995",
+    "journal": "Khirurgiia (Mosk)",
+    "title": "[Characteristics of peptic ulcer complications in children].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Zakomernyĭ AG"
+   },
+   {
+    "pmid": "2072794",
+    "year": "1991",
+    "journal": "Med Clin North Am",
+    "title": "Peptic ulcer disease in children.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "Gryboski JD"
+   },
+   {
+    "pmid": "1654645",
+    "year": "1991",
+    "journal": "Vestn Khir Im I I Grek",
+    "title": "[Surgical complications of peptic ulcer in children and adolescents].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Koval'kov VF"
+   },
+   {
+    "pmid": "1974285",
+    "year": "1990",
+    "journal": "J Pediatr Surg",
+    "title": "Peptic ulcer in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tsang TM"
+   },
+   {
+    "pmid": "2806828",
+    "year": "1989",
+    "journal": "Gastroenterol Jpn",
+    "title": "Locations of peptic ulcers in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Kato S"
+   },
+   {
+    "pmid": "2640288",
+    "year": "1989",
+    "journal": "Med Arh",
+    "title": "[Personal experience in the treatment of peptic ulcer in childhood].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Rafaeli Z"
+   },
+   {
+    "pmid": "3405676",
+    "year": "1988",
+    "journal": "Pediatrics",
+    "title": "Peptic ulcer disease in children: etiology, clinical findings, and clinical course.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Drumm B"
+   },
+   {
+    "pmid": "3694366",
+    "year": "1987",
+    "journal": "J Pediatr Gastroenterol Nutr",
+    "title": "Peptic ulcer disease in childhood: long-term prognosis.",
+    "ptype": [
+     "Journal Article",
+     "Research Support, Non-U.S. Gov't"
+    ],
+    "au": "Murphy MS"
+   },
+   {
+    "pmid": "3944750",
+    "year": "1986",
+    "journal": "J Pediatr Surg",
+    "title": "Diagnosis of peptic ulcer in children: the past and present.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tam PK"
+   },
+   {
+    "pmid": "4021371",
+    "year": "1985",
+    "journal": "Klin Khir (1962)",
+    "title": "[Perforation of peptic ulcer of Meckel's diverticulum in children].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Bairov GA"
+   },
+   {
+    "pmid": "6617045",
+    "year": "1983",
+    "journal": "Clin Pediatr (Phila)",
+    "title": "Peptic ulcer disease in children and adolescents. A ten-year experience.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Tolia V"
+   },
+   {
+    "pmid": "6838371",
+    "year": "1983",
+    "journal": "Arch Surg",
+    "title": "Acute peptic ulcer in childhood. Emergency surgical therapy in 39 cases.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Dunn S"
+   },
+   {
+    "pmid": "6935880",
+    "year": "1980",
+    "journal": "P N G Med J",
+    "title": "Acute duodenal ulceration in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Shepherd A"
+   },
+   {
+    "pmid": "710280",
+    "year": "1978",
+    "journal": "Dtsch Med Wochenschr",
+    "title": "[Peptic ulcer in children: diagnosis and treatment (author's transl)].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Medrano J"
+   },
+   {
+    "pmid": "609231",
+    "year": "1977",
+    "journal": "Khirurgiia (Mosk)",
+    "title": "[Stomach and duodenal ulcer perforation in children].",
+    "ptype": [
+     "English Abstract",
+     "Journal Article"
+    ],
+    "au": "Zherebtsova RV"
+   },
+   {
+    "pmid": "1264465",
+    "year": "1976",
+    "journal": "Pahlavi Med J",
+    "title": "Peptic ulcer in Iranian children.",
+    "ptype": [
+     "Comparative Study",
+     "Journal Article"
+    ],
+    "au": "Moazzami R"
+   },
+   {
+    "pmid": "4853569",
+    "year": "1974",
+    "journal": "Can Med Assoc J",
+    "title": "Peptic ulcer disease: a clinical study in 73 children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Deckelbaum RJ"
+   },
+   {
+    "pmid": "4773413",
+    "year": "1973",
+    "journal": "Vestn Khir Im I I Grek",
+    "title": "[Perforating duodenal ulcer in a 10-year-old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Zemliakov IuK"
+   },
+   {
+    "pmid": "5086503",
+    "year": "1972",
+    "journal": "Arch Dis Child",
+    "title": "Duodenal ulcer in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Robb JD"
+   },
+   {
+    "pmid": "5073585",
+    "year": "1972",
+    "journal": "Ugeskr Laeger",
+    "title": "[Peptic ulcer perforation in a 4-year-old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Rasmussen P"
+   },
+   {
+    "pmid": "5054089",
+    "year": "1972",
+    "journal": "Pol Przegl Chir",
+    "title": "[Gastric and duodenal ulcer perforation in adolescents].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Dutkiewicz A"
+   },
+   {
+    "pmid": "5020730",
+    "year": "1972",
+    "journal": "Br J Surg",
+    "title": "Perforated duodenal ulcer in childhood.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Johnstone JM"
+   },
+   {
+    "pmid": "5481406",
+    "year": "1970",
+    "journal": "Pol Przegl Chir",
+    "title": "[Perforation of a duodenal ulcer in a child in the course of adrenocortial steroids therapy].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Senderak K"
+   },
+   {
+    "pmid": "6083330",
+    "year": "1967",
+    "journal": "Rozhl Chir",
+    "title": "[Contribution to the occurrence of duodenal ulcer perforation in children].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Bobek V"
+   },
+   {
+    "pmid": "14295947",
+    "year": "1965",
+    "journal": "Ann Surg",
+    "title": "STRESS ULCER IN INFANTS AND CHILDREN.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "CHENOWETH AI"
+   },
+   {
+    "pmid": "14265231",
+    "year": "1965",
+    "journal": "Med J Aust",
+    "title": "FATAL PEPTIC ULCERATION IN A CHILD FOLLOWING ADMINISTRATION OF ADRENOCORTICOTROPHIC HORMONE.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "LINES DR"
+   },
+   {
+    "pmid": "14237415",
+    "year": "1965",
+    "journal": "Am J Dis Child",
+    "title": "GASTRECTOMY IN EARLY CHILDHOOD. CASE REPORT WITH 12-YEAR FOLLOW-UP.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "COLLINS DL"
+   },
+   {
+    "pmid": "5858525",
+    "year": "1965",
+    "journal": "Acta Chir Iugosl",
+    "title": "[Duodenal ulcer perforation in children].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "Lenković M"
+   },
+   {
+    "pmid": "14316424",
+    "year": "1964",
+    "journal": "Pediatriia",
+    "title": "[ON THE SURGICAL TREATMENT OF COMPLICATED GASTRIC AND DUODENAL ULCER IN CHILDREN].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "KULAKOV PE"
+   },
+   {
+    "pmid": "14225285",
+    "year": "1964",
+    "journal": "J Ir Med Assoc",
+    "title": "PEPTIC ULCER PERFORATION OF A MECKEL'S DIVERTICULUM IN A CHILD (OF NINE YEARS).",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "HOSNY SH"
+   },
+   {
+    "pmid": "14206735",
+    "year": "1964",
+    "journal": "Acta Pediatr Esp",
+    "title": "[PEPTIC ULCER IN CHILDREN].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "MITTY WF Jr"
+   },
+   {
+    "pmid": "14167414",
+    "year": "1964",
+    "journal": "Arch Surg",
+    "title": "GASTRODUODENAL ULCERS IN CHILDREN WITH BRAIN DISEASE.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "WALKER EE"
+   },
+   {
+    "pmid": "14162559",
+    "year": "1964",
+    "journal": "JAMA",
+    "title": "PEPTIC ULCERS IN INFANCY AND CHILDHOOD.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "THOMSON NB Jr"
+   },
+   {
+    "pmid": "14202971",
+    "year": "1964",
+    "journal": "Pol Tyg Lek",
+    "title": "[RUPTURED DUODENAL ULCER AS A CAUSE OF DEATH IN A 9-YEAR-OLD CHILD OPERATED ON FOR CEREBELLAR TUMOR].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "MAZUROWSKI W"
+   },
+   {
+    "pmid": "14209727",
+    "year": "1964",
+    "journal": "Ann Surg",
+    "title": "GASTRECTOMY IN INFANCY AND CHILDHOOD. I. REPORT OF TWO CASES OF GASTRECTOMY IN EARLY INFANCY.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "MOORE TC"
+   },
+   {
+    "pmid": "14181922",
+    "year": "1964",
+    "journal": "Orv Hetil",
+    "title": "[PEPTIC ULCER IN CHILDHOOD].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "JAN H"
+   },
+   {
+    "pmid": "14121784",
+    "year": "1964",
+    "journal": "Surgery",
+    "title": "CURLING'S ULCER IN CHILDHOOD: REVIEW OF THE LITERATURE AND REPORT OF FIVE CASES.",
+    "ptype": [
+     "Journal Article",
+     "Review"
+    ],
+    "au": "ABRAMSON DJ"
+   },
+   {
+    "pmid": "14133239",
+    "year": "1964",
+    "journal": "Ann Paediatr",
+    "title": "PEPTIC ULCER IN CHILDREN IN SWEDEN DURING THE YEARS 1953-1962.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "KARLSTROEM F"
+   },
+   {
+    "pmid": "14133159",
+    "year": "1963",
+    "journal": "Vestn Khir Im I I Grek",
+    "title": "[PERFORATED GASTRIC AND DUODENAL ULCERS IN CHILDREN].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "ORLOV AN"
+   },
+   {
+    "pmid": "14019248",
+    "year": "1963",
+    "journal": "Med J Aust",
+    "title": "Perforated peptic ulcer in childhood.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "CASTLE J"
+   },
+   {
+    "pmid": "14091953",
+    "year": "1963",
+    "journal": "Pediatriia",
+    "title": "[PERFORATED ULCER OF THE STOMACH AND DUODENUM IN ADOLESCENTS].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "MIKHALIANTS AA"
+   },
+   {
+    "pmid": "14042547",
+    "year": "1963",
+    "journal": "Am J Surg",
+    "title": "SURGICAL EXPERIENCE WITH PEPTIC ULCER IN INFANCY AND CHILDHOOD.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "LEIX F"
+   },
+   {
+    "pmid": "14074721",
+    "year": "1963",
+    "journal": "Pol Przegl Chir",
+    "title": "[PEPTIC ULCER IN CHILDREN].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "WALKOWIAK M"
+   },
+   {
+    "pmid": "14034639",
+    "year": "1963",
+    "journal": "Arch Dis Child",
+    "title": "Gastro-duodenal haemorrhage and perforation following cardiovascular surgery in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "KONRAD RM"
+   },
+   {
+    "pmid": "13987318",
+    "year": "1963",
+    "journal": "Am J Surg",
+    "title": "Peptic ulcer disease in childhood.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "SCHUSTER SR"
+   },
+   {
+    "pmid": "14465424",
+    "year": "1962",
+    "journal": "J Obstet Gynaecol Br Emp",
+    "title": "Perforated gastroduodenal ulcer in late pregnancy, operated upon with survival of both mother and child.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "LINDELL A"
+   },
+   {
+    "pmid": "13883122",
+    "year": "1962",
+    "journal": "Med Welt",
+    "title": "[Perforated double ulcer of the duodenum in a 4-year-old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "DAHM K"
+   },
+   {
+    "pmid": "14493374",
+    "year": "1962",
+    "journal": "Vestn Rentgenol Radiol",
+    "title": "[Chronic peptic ulcer of the duodenal bulb in an adolescent, complicated by penetration into the large intestine].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "ROGINETS VM"
+   },
+   {
+    "pmid": "14436979",
+    "year": "1959",
+    "journal": "Zentralbl Chir",
+    "title": "[Stomach perforation in a 3-year-old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "REGENBRECHT J"
+   },
+   {
+    "pmid": "13655462",
+    "year": "1959",
+    "journal": "Khirurgiia (Mosk)",
+    "title": "[Perforating ulcers of the stomach & duodenum in children].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "STRAKHOV SN"
+   },
+   {
+    "pmid": "13537088",
+    "year": "1958",
+    "journal": "Cesk Pediatr",
+    "title": "[Perforated gastroduodenal ulcer in children].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "GRUNERT V"
+   },
+   {
+    "pmid": "13503143",
+    "year": "1957",
+    "journal": "Klin Med (Mosk)",
+    "title": "[Clinical aspects and treatment of penetrating ulcers of the stomach and the duodenum in adolescents].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "DYMNIKOVA EI"
+   },
+   {
+    "pmid": "13395122",
+    "year": "1957",
+    "journal": "Ann Paediatr",
+    "title": "[Ulcus pepticum ventriculi in childhood with perforation into the abdominal aorta].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "KASER H"
+   },
+   {
+    "pmid": "13279062",
+    "year": "1955",
+    "journal": "Kinderarztl Prax",
+    "title": "[Localized peritonitis of bursa omentalis caused by perforated duodenal ulcer in a one-year old child].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "GRUBE E"
+   },
+   {
+    "pmid": "13098088",
+    "year": "1953",
+    "journal": "Lancet",
+    "title": "Perforated duodenal ulcer in children.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "BELL DM"
+   },
+   {
+    "pmid": "15424616",
+    "year": "1950",
+    "journal": "Riv Gastroenterol",
+    "title": "[Two cases of perforated ulcer in adolescence; contribution and criticism].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "EMILIO M"
+   },
+   {
+    "pmid": "18145985",
+    "year": "1949",
+    "journal": "Grace Hosp Bul",
+    "title": "Perforated peptic ulcer in a Meckel's diverticulum in a child; a case report.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "REYNOLDS RP"
+   },
+   {
+    "pmid": "20243815",
+    "year": "1947",
+    "journal": "West J Surg Obstet Gynecol",
+    "title": "Perforated ulcer in a child; report of a case.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "ORLOV M"
+   },
+   {
+    "pmid": "20243729",
+    "year": "1947",
+    "journal": "Bol Tr Soc Argent Cir",
+    "title": "[Perforated duodenal ulcer in a fifteen-year-old adolescent].",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "NOCITO FJ"
+   },
+   {
+    "pmid": "20990347",
+    "year": "1946",
+    "journal": "Nurs Mirror Midwives J",
+    "title": "Perforated duodenal ulcer in a child of 12 years.",
+    "ptype": [
+     "Journal Article"
+    ],
+    "au": "CHIPPENDALE M"
+   }
+  ]
+ }
+}
